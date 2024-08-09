@@ -1,0 +1,11 @@
+@charset "UTF-8";
+
+/// A function that gets a value from a map
+/// @param {map} $map - map to get the value from
+/// @param {string} $key - key to get the value from
+@function __mapDeepGet($map, $keys...) {
+  @each $key in $keys {
+    $map: map-get($map, $key);
+  }
+  @return $map;
+}

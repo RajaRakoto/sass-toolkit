@@ -12,4 +12,4 @@ export const banner = `
 **Accelerate your website customization process with PLUM — an efficient mixins toolset driven by SASS. Easily generate uniform, adaptable CSS stylesheets, regardless of project magnitude. Seamlessly incorporate third-party modules like animate, buttons2, flex, grid, hover2, magic, buttons, open-color, shadows ... Enjoy effortless integration with popular CSS frameworks such as Bootstrap for enhanced versatility.**
 
 > Additional tools such as [Plum CLI](https://github.com/RajaRakoto/plum-cli) and [Plum Extension](https://github.com/RajaRakoto/plum-extension) for VSCode are utilized to enhance the use of **Plum** package.
-`
+`;

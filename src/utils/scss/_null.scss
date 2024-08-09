@@ -1,0 +1,17 @@
+@charset "UTF-8";
+
+/// A function that replaces null values with a specified value
+/// @param {list} $value - value to replace null values
+/// @param {string} $seperation - seperation of the list
+/// @param {boolean} $skip - skip null values
+@function __null($value, $seperation: comma, $skip: false) {
+  $list: ();
+  @for $i from 1 through length($value) {
+    @if nth($value, $i) == null {
+      $list: append($list, if($skip, null, 0), $seperation);
+    } @else {
+      $list: append($list, nth($value, $i), $seperation);
+    }
+  }
+  @return $list;
+}

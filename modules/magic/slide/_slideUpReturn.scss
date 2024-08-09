@@ -1,40 +1,40 @@
 @charset "UTF-8";
 
 @mixin magic-slideUpReturn($duration, $delay) {
-  -webkit-animation-name: slideUpReturn;
-  animation-name: slideUpReturn;
-  animation-duration: $duration;
-  animation-delay: $delay;
-  animation-fill-mode: both;
+	-webkit-animation-name: slideUpReturn;
+	animation-name: slideUpReturn;
+	animation-duration: $duration;
+	animation-delay: $delay;
+	animation-fill-mode: both;
 
-  @-webkit-keyframes slideUpReturn {
-    0% {
-      -webkit-transform-origin: 0 0;
-      transform-origin: 0 0;
-      -webkit-transform: translateY(-100%);
-      transform: translateY(-100%);
-    }
+	@-webkit-keyframes slideUpReturn {
+		0% {
+			-webkit-transform-origin: 0 0;
+			transform-origin: 0 0;
+			-webkit-transform: translateY(-100%);
+			transform: translateY(-100%);
+		}
 
-    100% {
-      -webkit-transform-origin: 0 0;
-      transform-origin: 0 0;
-      -webkit-transform: translateY(0%);
-      transform: translateY(0%);
-    }
-  }
-  @keyframes slideUpReturn {
-    0% {
-      -webkit-transform-origin: 0 0;
-      transform-origin: 0 0;
-      -webkit-transform: translateY(-100%);
-      transform: translateY(-100%);
-    }
+		100% {
+			-webkit-transform-origin: 0 0;
+			transform-origin: 0 0;
+			-webkit-transform: translateY(0%);
+			transform: translateY(0%);
+		}
+	}
+	@keyframes slideUpReturn {
+		0% {
+			-webkit-transform-origin: 0 0;
+			transform-origin: 0 0;
+			-webkit-transform: translateY(-100%);
+			transform: translateY(-100%);
+		}
 
-    100% {
-      -webkit-transform-origin: 0 0;
-      transform-origin: 0 0;
-      -webkit-transform: translateY(0%);
-      transform: translateY(0%);
-    }
-  }
+		100% {
+			-webkit-transform-origin: 0 0;
+			transform-origin: 0 0;
+			-webkit-transform: translateY(0%);
+			transform: translateY(0%);
+		}
+	}
 }

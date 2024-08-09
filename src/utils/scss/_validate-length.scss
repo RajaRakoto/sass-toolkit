@@ -1,0 +1,14 @@
+@charset "UTF-8";
+
+/// A function that validates a length
+/// @param {string} $value - value to validate if it is a length
+@function __validateLength($value) {
+  $list: ('auto', 'inherit', 'initial', 0);
+  @if index($list, $value) {
+    @return $value;
+  } @else if type-of($value) == 'number' and not unitless($value) {
+    @return $value;
+  } @else {
+    @return $value;
+  }
+}

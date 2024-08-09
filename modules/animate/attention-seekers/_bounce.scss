@@ -1,33 +1,33 @@
 @charset "UTF-8";
 
 @mixin animate-bounce(
-  $count: $countDefault,
-  $duration: $durationDefault,
-  $delay: $delayDefault,
-  $function: $functionDefault,
-  $fill: $fillDefault,
-  $visibility: $visibilityDefault
+	$count: $countDefault,
+	$duration: $durationDefault,
+	$delay: $delayDefault,
+	$function: $functionDefault,
+	$fill: $fillDefault,
+	$visibility: $visibilityDefault
 ) {
-  @include keyframes(animate-bounce) {
-    0%,
-    20%,
-    50%,
-    80%,
-    100% {
-      @include transform(translateY(0));
-    }
-    40% {
-      @include transform(translateY(-30px));
-    }
-    60% {
-      @include transform(translateY(-15px));
-    }
-  }
-  @include animation-name(animate-bounce);
-  @include count($count);
-  @include duration($duration);
-  @include delay($delay);
-  @include function($function);
-  @include fill-mode($fill);
-  @include visibility($visibility);
+	@include keyframes(animate-bounce) {
+		0%,
+		20%,
+		50%,
+		80%,
+		100% {
+			@include transform(translateY(0));
+		}
+		40% {
+			@include transform(translateY(-30px));
+		}
+		60% {
+			@include transform(translateY(-15px));
+		}
+	}
+	@include animation-name(animate-bounce);
+	@include count($count);
+	@include duration($duration);
+	@include delay($delay);
+	@include function($function);
+	@include fill-mode($fill);
+	@include visibility($visibility);
 }

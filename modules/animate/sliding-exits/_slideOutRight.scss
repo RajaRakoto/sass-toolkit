@@ -1,27 +1,27 @@
 @charset "UTF-8";
 
 @mixin animate-slideOutRight(
-  $count: $countDefault,
-  $duration: $durationDefault,
-  $delay: $delayDefault,
-  $function: $functionDefault,
-  $fill: $fillDefault,
-  $visibility: $visibilityDefault
+	$count: $countDefault,
+	$duration: $durationDefault,
+	$delay: $delayDefault,
+	$function: $functionDefault,
+	$fill: $fillDefault,
+	$visibility: $visibilityDefault
 ) {
-  @include keyframes(animate-slideOutRight) {
-    0% {
-      @include transform(translateX(0));
-    }
-    100% {
-      opacity: 0;
-      @include transform(translateX(2000px));
-    }
-  }
-  @include animation-name(animate-slideOutRight);
-  @include count($count);
-  @include duration($duration);
-  @include delay($delay);
-  @include function($function);
-  @include fill-mode($fill);
-  @include visibility($visibility);
+	@include keyframes(animate-slideOutRight) {
+		0% {
+			@include transform(translateX(0));
+		}
+		100% {
+			opacity: 0;
+			@include transform(translateX(2000px));
+		}
+	}
+	@include animation-name(animate-slideOutRight);
+	@include count($count);
+	@include duration($duration);
+	@include delay($delay);
+	@include function($function);
+	@include fill-mode($fill);
+	@include visibility($visibility);
 }

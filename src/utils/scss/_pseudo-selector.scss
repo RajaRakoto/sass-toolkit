@@ -1,0 +1,13 @@
+@charset "UTF-8";
+
+/// A function that returns a list of pseudo selectors
+/// @param {list} $elements - list of elements
+/// @param {string} $pseudo - pseudo selector
+@function __pseudoSelector($elements, $pseudo: null) {
+  $list: ();
+  @each $element in $elements {
+    $element: if($pseudo, $element + ':' + $pseudo, $element);
+    $list: append($list, $element, comma);
+  }
+  @return $list;
+}

@@ -1,19 +1,19 @@
 @charset "UTF-8";
 
 @mixin icon-fade {
-  @include hacks();
+	@include hacks();
 
-  .hvr-icon {
-    @include prefixed(transform, translateZ(0));
-    @include prefixed(transition-duration, 0.5s);
-    @include prefixed(transition-property, color);
-  }
+	.hvr-icon {
+		@include prefixed(transform, translateZ(0));
+		@include prefixed(transition-duration, 0.5s);
+		@include prefixed(transition-property, color);
+	}
 
-  &:hover,
-  &:focus,
-  &:active {
-    .hvr-icon {
-      color: #0f9e5e;
-    }
-  }
+	&:hover,
+	&:focus,
+	&:active {
+		.hvr-icon {
+			color: #0f9e5e;
+		}
+	}
 }

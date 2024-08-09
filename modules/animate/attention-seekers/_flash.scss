@@ -1,29 +1,29 @@
 @charset "UTF-8";
 
 @mixin animate-flash(
-  $count: $countDefault,
-  $duration: $durationDefault,
-  $delay: $delayDefault,
-  $function: $functionDefault,
-  $fill: $fillDefault,
-  $visibility: $visibilityDefault
+	$count: $countDefault,
+	$duration: $durationDefault,
+	$delay: $delayDefault,
+	$function: $functionDefault,
+	$fill: $fillDefault,
+	$visibility: $visibilityDefault
 ) {
-  @include keyframes(animate-flash) {
-    0%,
-    50%,
-    100% {
-      opacity: 1;
-    }
-    25%,
-    75% {
-      opacity: 0;
-    }
-  }
-  @include animation-name(animate-flash);
-  @include count($count);
-  @include duration($duration);
-  @include delay($delay);
-  @include function($function);
-  @include fill-mode($fill);
-  @include visibility($visibility);
+	@include keyframes(animate-flash) {
+		0%,
+		50%,
+		100% {
+			opacity: 1;
+		}
+		25%,
+		75% {
+			opacity: 0;
+		}
+	}
+	@include animation-name(animate-flash);
+	@include count($count);
+	@include duration($duration);
+	@include delay($delay);
+	@include function($function);
+	@include fill-mode($fill);
+	@include visibility($visibility);
 }

@@ -1,0 +1,27 @@
+@charset "UTF-8";
+
+// note: this mixin is not meant to be used directly
+@mixin __border-box($value: null) {
+  @if not & and $value == null {
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+    }
+  } @else if & and $value == 'only' {
+    &,
+    &::before,
+    &::after {
+      box-sizing: border-box;
+    }
+  } @else if & and $value == null {
+    &,
+    &::before,
+    &::after,
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+    }
+  }
+}

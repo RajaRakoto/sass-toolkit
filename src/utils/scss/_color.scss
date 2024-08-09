@@ -1,0 +1,54 @@
+@charset "UTF-8";
+
+$turquoise: #1abc9c;
+$green-sea: #16a085;
+$emerald: #2ecc71;
+$nephritis: #27ae60;
+$peter-river: #3498db;
+$belize-hole: #2980b9;
+$wet-asphalt: #34495e;
+$midnight-blue: #2c3e50;
+$amethyst: #9b59b6;
+$wisteria: #8e44ad;
+$sun-flower: #f1c40f;
+$orange: #f39c12;
+$carrot: #e67e22;
+$pumpkin: #d35400;
+$alizarin: #e74c3c;
+$pomegranate: #c0392b;
+$clouds: #ecf0f1;
+$silver: #bdc3c7;
+$concrete: #95a5a6;
+$asbestos: #7f8c8d;
+
+/// A function that returns the pastel of the color in argument
+/// @param {string} $colors - color to determine its pastel value
+@function __color-pastel($colors) {
+  $hue: hue($colors);
+  $sat: 100%;
+  $light: 90%;
+  $pastel: hsl($hue, $sat, $light);
+
+  @return $pastel;
+}
+
+/// A function that adjusts the brightness of an argument color
+/// @param {string} $colors - color to adjust
+/// @param {percent} $percent - lighten percentage
+@function __color-adjust($colors, $percent) {
+  $adjust: lighten(adjust-hue($colors, 20), $percent);
+
+  @return $adjust;
+}
+
+/// A function that returns the complement of the color in argument
+/// @param {string} $colors - color to determine its complement value
+/// @param {string} $colors-primary - primary color
+@function __color-complement($colors, $colors-primary: $colors) {
+  @if (hue($colors) >= 135 and hue($colors) < 180) {
+    $colors: complement($colors-primary);
+  } @else {
+    $colors: adjust-hue($colors, -60);
+  }
+  @return $colors;
+}

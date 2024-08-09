@@ -1,40 +1,40 @@
 @charset "UTF-8";
 
 @mixin magic-perspectiveRight($duration, $delay) {
-  -webkit-animation-name: perspectiveRight;
-  animation-name: perspectiveRight;
-  animation-duration: $duration;
-  animation-delay: $delay;
-  animation-fill-mode: both;
+	-webkit-animation-name: perspectiveRight;
+	animation-name: perspectiveRight;
+	animation-duration: $duration;
+	animation-delay: $delay;
+	animation-fill-mode: both;
 
-  @-webkit-keyframes perspectiveRight {
-    0% {
-      -webkit-transform-origin: 100% 0;
-      transform-origin: 100% 0;
-      -webkit-transform: perspective(800px) rotateY(0deg);
-      transform: perspective(800px) rotateY(0deg);
-    }
+	@-webkit-keyframes perspectiveRight {
+		0% {
+			-webkit-transform-origin: 100% 0;
+			transform-origin: 100% 0;
+			-webkit-transform: perspective(800px) rotateY(0deg);
+			transform: perspective(800px) rotateY(0deg);
+		}
 
-    100% {
-      -webkit-transform-origin: 100% 0;
-      transform-origin: 100% 0;
-      -webkit-transform: perspective(800px) rotateY(180deg);
-      transform: perspective(800px) rotateY(180deg);
-    }
-  }
-  @keyframes perspectiveRight {
-    0% {
-      -webkit-transform-origin: 100% 0;
-      transform-origin: 100% 0;
-      -webkit-transform: perspective(800px) rotateY(0deg);
-      transform: perspective(800px) rotateY(0deg);
-    }
+		100% {
+			-webkit-transform-origin: 100% 0;
+			transform-origin: 100% 0;
+			-webkit-transform: perspective(800px) rotateY(180deg);
+			transform: perspective(800px) rotateY(180deg);
+		}
+	}
+	@keyframes perspectiveRight {
+		0% {
+			-webkit-transform-origin: 100% 0;
+			transform-origin: 100% 0;
+			-webkit-transform: perspective(800px) rotateY(0deg);
+			transform: perspective(800px) rotateY(0deg);
+		}
 
-    100% {
-      -webkit-transform-origin: 100% 0;
-      transform-origin: 100% 0;
-      -webkit-transform: perspective(800px) rotateY(180deg);
-      transform: perspective(800px) rotateY(180deg);
-    }
-  }
+		100% {
+			-webkit-transform-origin: 100% 0;
+			transform-origin: 100% 0;
+			-webkit-transform: perspective(800px) rotateY(180deg);
+			transform: perspective(800px) rotateY(180deg);
+		}
+	}
 }

@@ -1,0 +1,11 @@
+@charset "UTF-8";
+
+/// A function that checks if a value is a number
+/// @param {number} $value - value to check if it is a number
+@function __isNumber($value) {
+  @if type-of($value) == 'number' {
+    @return $value;
+  } @else {
+    @warn "Please make sure you pass a valid number!";
+  }
+}

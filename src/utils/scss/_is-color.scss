@@ -1,0 +1,15 @@
+@charset "UTF-8";
+
+/// A function that checks if a value is a color
+/// @param {color} $value - value to check if it is a color
+@function __isColor($value) {
+  $list: ();
+  @for $i from 1 through length($value) {
+    @if type-of(nth($value, $i)) == 'color' {
+      $list: append($list, nth($value, $i), comma);
+    } @else {
+      @error "'#{nth($value, $i)}' is not a color value, please replace it with a valid one.";
+    }
+  }
+  @return $list;
+}

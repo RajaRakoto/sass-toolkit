@@ -5,6 +5,8 @@ export const extension = `
 
 **Plum** simplifies its utilization through a dedicated [VSCode extension](https://github.com/RajaRakoto/plum-extension), encompassing a variety of code snippets. These snippets facilitate swift code generation for invoking mixins, functions, modules, frameworks, and more ...
 
+<img src="https://github.com/RajaRakoto/github-docs/blob/master/plum/plum-extension-demo.gif?raw=true" width="800">
+
 **Usage**: You can install it by typing "plum" in the extension tab of your IDE
 
 **Prefix**: The extension of **Plum** includes a particular "prefix" to better organize and classify its snippets:
@@ -27,4 +29,4 @@ plum-[category]-[name...] // e.g: plum-modules-oc-grape
 ...
 
 \`[name]\`: This designation denotes a mixin, function, module, or framework name. It acts as a quick identifier for the specific code snippet you wish to employ. For example, if you're opting for the "blue" color scheme, simply typing "plum-blue" will prompt the extension to suggest "plum-modules-oc-blue" for your selection.
-`
+`;

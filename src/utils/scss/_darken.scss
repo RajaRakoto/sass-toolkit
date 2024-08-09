@@ -1,0 +1,10 @@
+@charset "UTF-8";
+
+/// A function that darkens a color
+/// @param {color} $color - color to darken
+/// @param {number} $percentage - percentage to darken
+@function __darken($color, $percentage) {
+  @if __isColor($color) {
+    @return mix(black, $color, $percentage);
+  }
+}

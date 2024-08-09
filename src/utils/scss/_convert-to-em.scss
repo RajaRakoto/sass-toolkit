@@ -1,0 +1,11 @@
+@charset "UTF-8";
+
+@use 'sass:math';
+
+/// A function that converts a pixel value to em
+/// @param {pixel} $value - pixel value to convert to em
+@function __convertToEm($value) {
+  $base-value: 16px;
+  $rem-value: math.div($value, $base-value);
+  @return $rem-value + unquote('em');
+}

@@ -1,0 +1,9 @@
+@charset "UTF-8";
+
+@use 'sass:math';
+
+/// A function that removes the unit from a number
+/// @param {number} $value - number to remove unit from
+@function __clearUnit($value) {
+  @return math.div($value, ($value * 0 + 1));
+}

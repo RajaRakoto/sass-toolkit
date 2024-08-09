@@ -1,28 +1,28 @@
 @charset "UTF-8";
 
 @mixin animate-fadeOutRight(
-  $count: $countDefault,
-  $duration: $durationDefault,
-  $delay: $delayDefault,
-  $function: $functionDefault,
-  $fill: $fillDefault,
-  $visibility: $visibilityDefault
+	$count: $countDefault,
+	$duration: $durationDefault,
+	$delay: $delayDefault,
+	$function: $functionDefault,
+	$fill: $fillDefault,
+	$visibility: $visibilityDefault
 ) {
-  @include keyframes(animate-fadeOutRight) {
-    0% {
-      opacity: 1;
-      @include transform(translateX(0));
-    }
-    100% {
-      opacity: 0;
-      @include transform(translateX(20px));
-    }
-  }
-  @include animation-name(animate-fadeOutRight);
-  @include count($count);
-  @include duration($duration);
-  @include delay($delay);
-  @include function($function);
-  @include fill-mode($fill);
-  @include visibility($visibility);
+	@include keyframes(animate-fadeOutRight) {
+		0% {
+			opacity: 1;
+			@include transform(translateX(0));
+		}
+		100% {
+			opacity: 0;
+			@include transform(translateX(20px));
+		}
+	}
+	@include animation-name(animate-fadeOutRight);
+	@include count($count);
+	@include duration($duration);
+	@include delay($delay);
+	@include function($function);
+	@include fill-mode($fill);
+	@include visibility($visibility);
 }

@@ -1,44 +1,44 @@
 @charset "UTF-8";
 
 @mixin magic-swap($duration, $delay) {
-  -webkit-animation-name: swap;
-  animation-name: swap;
-  animation-duration: $duration;
-  animation-delay: $delay;
-  animation-fill-mode: both;
+	-webkit-animation-name: swap;
+	animation-name: swap;
+	animation-duration: $duration;
+	animation-delay: $delay;
+	animation-fill-mode: both;
 
-  @-webkit-keyframes swap {
-    0% {
-      opacity: 0;
-      -webkit-transform-origin: 0 100%;
-      transform-origin: 0 100%;
-      -webkit-transform: scale(0, 0) translate(-700px, 0px);
-      transform: scale(0, 0) translate(-700px, 0px);
-    }
+	@-webkit-keyframes swap {
+		0% {
+			opacity: 0;
+			-webkit-transform-origin: 0 100%;
+			transform-origin: 0 100%;
+			-webkit-transform: scale(0, 0) translate(-700px, 0px);
+			transform: scale(0, 0) translate(-700px, 0px);
+		}
 
-    100% {
-      opacity: 1;
-      -webkit-transform-origin: 100% 100%;
-      transform-origin: 100% 100%;
-      -webkit-transform: scale(1, 1) translate(0px, 0px);
-      transform: scale(1, 1) translate(0px, 0px);
-    }
-  }
-  @keyframes swap {
-    0% {
-      opacity: 0;
-      -webkit-transform-origin: 0 100%;
-      transform-origin: 0 100%;
-      -webkit-transform: scale(0, 0) translate(-700px, 0px);
-      transform: scale(0, 0) translate(-700px, 0px);
-    }
+		100% {
+			opacity: 1;
+			-webkit-transform-origin: 100% 100%;
+			transform-origin: 100% 100%;
+			-webkit-transform: scale(1, 1) translate(0px, 0px);
+			transform: scale(1, 1) translate(0px, 0px);
+		}
+	}
+	@keyframes swap {
+		0% {
+			opacity: 0;
+			-webkit-transform-origin: 0 100%;
+			transform-origin: 0 100%;
+			-webkit-transform: scale(0, 0) translate(-700px, 0px);
+			transform: scale(0, 0) translate(-700px, 0px);
+		}
 
-    100% {
-      opacity: 1;
-      -webkit-transform-origin: 100% 100%;
-      transform-origin: 100% 100%;
-      -webkit-transform: scale(1, 1) translate(0px, 0px);
-      transform: scale(1, 1) translate(0px, 0px);
-    }
-  }
+		100% {
+			opacity: 1;
+			-webkit-transform-origin: 100% 100%;
+			transform-origin: 100% 100%;
+			-webkit-transform: scale(1, 1) translate(0px, 0px);
+			transform: scale(1, 1) translate(0px, 0px);
+		}
+	}
 }

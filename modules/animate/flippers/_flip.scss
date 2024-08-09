@@ -1,43 +1,43 @@
 @charset "UTF-8";
 
 @mixin animate-flip(
-  $count: $countDefault,
-  $duration: $durationDefault,
-  $delay: $delayDefault,
-  $function: $functionDefault,
-  $fill: $fillDefault,
-  $visibility: $visibilityDefault
+	$count: $countDefault,
+	$duration: $durationDefault,
+	$delay: $delayDefault,
+	$function: $functionDefault,
+	$fill: $fillDefault,
+	$visibility: $visibilityDefault
 ) {
-  @include keyframes(animate-flip) {
-    0% {
-      @include transform(perspective(400px) rotateY(0));
-      animation-timing-function: ease-out;
-    }
-    40% {
-      @include transform(perspective(400px) translateZ(150px) rotateY(170deg));
-      animation-timing-function: ease-out;
-    }
-    50% {
-      @include transform(
-        perspective(400px) translateZ(150px) rotateY(190deg) scale(1)
-      );
-      animation-timing-function: ease-in;
-    }
-    80% {
-      @include transform(perspective(400px) rotateY(360deg) scale(0.95));
-      animation-timing-function: ease-in;
-    }
-    100% {
-      @include transform(perspective(400px) scale(1));
-      animation-timing-function: ease-in;
-    }
-  }
-  @include transform-style(preserve-3d);
-  @include animation-name(animate-flip);
-  @include count($count);
-  @include duration($duration);
-  @include delay($delay);
-  @include function($function);
-  @include fill-mode($fill);
-  @include visibility($visibility);
+	@include keyframes(animate-flip) {
+		0% {
+			@include transform(perspective(400px) rotateY(0));
+			animation-timing-function: ease-out;
+		}
+		40% {
+			@include transform(perspective(400px) translateZ(150px) rotateY(170deg));
+			animation-timing-function: ease-out;
+		}
+		50% {
+			@include transform(
+				perspective(400px) translateZ(150px) rotateY(190deg) scale(1)
+			);
+			animation-timing-function: ease-in;
+		}
+		80% {
+			@include transform(perspective(400px) rotateY(360deg) scale(0.95));
+			animation-timing-function: ease-in;
+		}
+		100% {
+			@include transform(perspective(400px) scale(1));
+			animation-timing-function: ease-in;
+		}
+	}
+	@include transform-style(preserve-3d);
+	@include animation-name(animate-flip);
+	@include count($count);
+	@include duration($duration);
+	@include delay($delay);
+	@include function($function);
+	@include fill-mode($fill);
+	@include visibility($visibility);
 }

@@ -1,40 +1,40 @@
 @charset "UTF-8";
 
 @mixin magic-slideLeft($duration, $delay) {
-  -webkit-animation-name: slideLeft;
-  animation-name: slideLeft;
-  animation-duration: $duration;
-  animation-delay: $delay;
-  animation-fill-mode: both;
+	-webkit-animation-name: slideLeft;
+	animation-name: slideLeft;
+	animation-duration: $duration;
+	animation-delay: $delay;
+	animation-fill-mode: both;
 
-  @-webkit-keyframes slideLeft {
-    0% {
-      -webkit-transform-origin: 0 0;
-      transform-origin: 0 0;
-      -webkit-transform: translateX(0%);
-      transform: translateX(0%);
-    }
+	@-webkit-keyframes slideLeft {
+		0% {
+			-webkit-transform-origin: 0 0;
+			transform-origin: 0 0;
+			-webkit-transform: translateX(0%);
+			transform: translateX(0%);
+		}
 
-    100% {
-      -webkit-transform-origin: 0 0;
-      transform-origin: 0 0;
-      -webkit-transform: translateX(-100%);
-      transform: translateX(-100%);
-    }
-  }
-  @keyframes slideLeft {
-    0% {
-      -webkit-transform-origin: 0 0;
-      transform-origin: 0 0;
-      -webkit-transform: translateX(0%);
-      transform: translateX(0%);
-    }
+		100% {
+			-webkit-transform-origin: 0 0;
+			transform-origin: 0 0;
+			-webkit-transform: translateX(-100%);
+			transform: translateX(-100%);
+		}
+	}
+	@keyframes slideLeft {
+		0% {
+			-webkit-transform-origin: 0 0;
+			transform-origin: 0 0;
+			-webkit-transform: translateX(0%);
+			transform: translateX(0%);
+		}
 
-    100% {
-      -webkit-transform-origin: 0 0;
-      transform-origin: 0 0;
-      -webkit-transform: translateX(-100%);
-      transform: translateX(-100%);
-    }
-  }
+		100% {
+			-webkit-transform-origin: 0 0;
+			transform-origin: 0 0;
+			-webkit-transform: translateX(-100%);
+			transform: translateX(-100%);
+		}
+	}
 }

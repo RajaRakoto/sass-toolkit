@@ -1,0 +1,8 @@
+@charset "UTF-8";
+
+/// A function that multiplies two values
+/// @param {number} $size - first value
+/// @param {number} $time - second value
+@function __fontSizer($size, $time) {
+  @return $size * $time;
+}

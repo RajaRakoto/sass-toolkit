@@ -1,48 +1,48 @@
 @charset "UTF-8";
 
 @mixin magic-spaceInUp($duration, $delay) {
-  -webkit-animation-name: spaceInUp;
-  animation-name: spaceInUp;
-  animation-duration: $duration;
-  animation-delay: $delay;
-  animation-fill-mode: both;
+	-webkit-animation-name: spaceInUp;
+	animation-name: spaceInUp;
+	animation-duration: $duration;
+	animation-delay: $delay;
+	animation-fill-mode: both;
 
-  .spaceInUp {
-    -webkit-animation-name: spaceInUp;
-    animation-name: spaceInUp;
-  }
-  @-webkit-keyframes spaceInUp {
-    0% {
-      opacity: 0;
-      -webkit-transform-origin: 50% 0%;
-      transform-origin: 50% 0%;
-      -webkit-transform: scale(0.2) translate(0%, -200%);
-      transform: scale(0.2) translate(0%, -200%);
-    }
+	.spaceInUp {
+		-webkit-animation-name: spaceInUp;
+		animation-name: spaceInUp;
+	}
+	@-webkit-keyframes spaceInUp {
+		0% {
+			opacity: 0;
+			-webkit-transform-origin: 50% 0%;
+			transform-origin: 50% 0%;
+			-webkit-transform: scale(0.2) translate(0%, -200%);
+			transform: scale(0.2) translate(0%, -200%);
+		}
 
-    100% {
-      opacity: 1;
-      -webkit-transform-origin: 50% 0%;
-      transform-origin: 50% 0%;
-      -webkit-transform: scale(1) translate(0%, 0%);
-      transform: scale(1) translate(0%, 0%);
-    }
-  }
-  @keyframes spaceInUp {
-    0% {
-      opacity: 0;
-      -webkit-transform-origin: 50% 0%;
-      transform-origin: 50% 0%;
-      -webkit-transform: scale(0.2) translate(0%, -200%);
-      transform: scale(0.2) translate(0%, -200%);
-    }
+		100% {
+			opacity: 1;
+			-webkit-transform-origin: 50% 0%;
+			transform-origin: 50% 0%;
+			-webkit-transform: scale(1) translate(0%, 0%);
+			transform: scale(1) translate(0%, 0%);
+		}
+	}
+	@keyframes spaceInUp {
+		0% {
+			opacity: 0;
+			-webkit-transform-origin: 50% 0%;
+			transform-origin: 50% 0%;
+			-webkit-transform: scale(0.2) translate(0%, -200%);
+			transform: scale(0.2) translate(0%, -200%);
+		}
 
-    100% {
-      opacity: 1;
-      -webkit-transform-origin: 50% 0%;
-      transform-origin: 50% 0%;
-      -webkit-transform: scale(1) translate(0%, 0%);
-      transform: scale(1) translate(0%, 0%);
-    }
-  }
+		100% {
+			opacity: 1;
+			-webkit-transform-origin: 50% 0%;
+			transform-origin: 50% 0%;
+			-webkit-transform: scale(1) translate(0%, 0%);
+			transform: scale(1) translate(0%, 0%);
+		}
+	}
 }

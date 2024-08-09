@@ -1,0 +1,10 @@
+@charset "UTF-8";
+
+/// A function that lightens a color
+/// @param {color} $color - color to lighten
+/// @param {number} $percentage - percentage to lighten
+@function __lighten($color, $percentage) {
+  @if __isColor($color) {
+    @return mix(white, $color, $percentage);
+  }
+}
