@@ -42,14 +42,14 @@ module.exports = (grunt) => {
 		compress: {
 			main: {
 				options: {
-					archive: backupsDestination + "main.tar.gz",
+					archive: `${backupsDestination}main.tar.gz`,
 				},
 				files: [{ src: ["./*", "./.*"] }],
 				filter: "isFile",
 			},
 			docs: {
 				options: {
-					archive: backupsDestination + "docs.tar.gz",
+					archive: `${backupsDestination}docs.tar.gz`,
 				},
 				expand: true,
 				cwd: "./docs/",
@@ -58,7 +58,7 @@ module.exports = (grunt) => {
 			},
 			modules: {
 				options: {
-					archive: backupsDestination + "modules.tar.gz",
+					archive: `${backupsDestination}modules.tar.gz`,
 				},
 				expand: true,
 				cwd: "./modules/",
@@ -67,7 +67,7 @@ module.exports = (grunt) => {
 			},
 			scripts: {
 				options: {
-					archive: backupsDestination + "scripts.tar.gz",
+					archive: `${backupsDestination}scripts.tar.gz`,
 				},
 				expand: true,
 				cwd: "./scripts/",
@@ -76,7 +76,7 @@ module.exports = (grunt) => {
 			},
 			src: {
 				options: {
-					archive: backupsDestination + "src.tar.gz",
+					archive: `${backupsDestination}src.tar.gz`,
 				},
 				expand: true,
 				cwd: "./src/",
@@ -85,7 +85,7 @@ module.exports = (grunt) => {
 			},
 			test: {
 				options: {
-					archive: backupsDestination + "test.tar.gz",
+					archive: `${backupsDestination}test.tar.gz`,
 				},
 				expand: true,
 				cwd: "./test/",
@@ -94,7 +94,7 @@ module.exports = (grunt) => {
 			},
 			tmp: {
 				options: {
-					archive: backupsDestination + "tmp.tar.gz",
+					archive: `${backupsDestination}tmp.tar.gz`,
 				},
 				expand: true,
 				cwd: "./tmp/",
@@ -103,7 +103,7 @@ module.exports = (grunt) => {
 			},
 			utilities: {
 				options: {
-					archive: backupsDestination + "utilities.tar.gz",
+					archive: `${backupsDestination}utilities.tar.gz`,
 				},
 				expand: true,
 				cwd: "./utilities/",
@@ -163,25 +163,25 @@ module.exports = (grunt) => {
 				case "cyan":
 					console.log(`\n${taskTitle}`.cyan.inverse.bold);
 					taskNames.forEach((taskNames, index) => {
-						console.log(taskNames.cyan + ` -> ${taskStatus[index]}`);
+						console.log(`${taskNames.cyan} -> ${taskStatus[index]}`);
 					});
 					break;
 				case "magenta":
 					console.log(`\n${taskTitle}`.magenta.inverse.bold);
 					taskNames.forEach((taskNames, index) => {
-						console.log(taskNames.magenta + ` -> ${taskStatus[index]}`);
+						console.log(`${taskNames.magenta} -> ${taskStatus[index]}`);
 					});
 					break;
 				case "yellow":
 					console.log(`\n${taskTitle}`.yellow.inverse.bold);
 					taskNames.forEach((taskNames, index) => {
-						console.log(taskNames.yellow + ` -> ${taskStatus[index]}`);
+						console.log(`${taskNames.yellow} -> ${taskStatus[index]}`);
 					});
 					break;
 				case "blue":
 					console.log(`\n${taskTitle}`.blue.inverse.bold);
 					taskNames.forEach((taskNames, index) => {
-						console.log(taskNames.blue + ` -> ${taskStatus[index]}`);
+						console.log(`${taskNames.blue} -> ${taskStatus[index]}`);
 					});
 					break;
 
