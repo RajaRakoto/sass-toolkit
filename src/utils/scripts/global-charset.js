@@ -23,7 +23,7 @@ function traverseDirectory(dir) {
 				processSCSSFile(filePath);
 			}
 		}
-}
+	}
 }
 
 // add utf8 at the beginning of an SCSS file
