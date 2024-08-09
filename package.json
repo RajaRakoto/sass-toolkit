@@ -67,9 +67,9 @@
 		"npm-proxy:publish": "npm publish --registry http://localhost:4873/",
 		"npm-proxy:unpublish": "npm unpublish --force --registry http://localhost:4873/ @raja-rakoto/plum",
 		"npm-proxy:republish": "bun run npm-proxy:unpublish && bun run npm-proxy:publish",
-		"script:global-docs": "cd scripts && bun global-docs.js > ../README.md",
-		"script:global-charset": "cd scripts && bun global-charset.js",
-		"script:hover-comment": "cd scripts && bun hover-comment.js"
+		"script:global-docs": "cd src/utils/scripts && bun global-docs.js > ../../../README.md",
+		"script:global-charset": "cd src/utils/scripts && bun global-charset.js",
+		"script:hover-comment": "cd src/utils/scripts && bun hover-comment.js"
 	},
 	"devDependencies": {
 		"@biomejs/biome": "^1.8.3",
