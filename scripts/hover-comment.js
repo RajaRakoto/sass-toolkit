@@ -23,7 +23,8 @@ function removeFirstLine(filePath) {
 }
 
 function processSCSSFiles(directory) {
-	fs.readdirSync(directory).forEach((file) => {
+	const entries = fs.readdirSync(directory);
+	for (const file of entries) {
 		const filePath = path.join(directory, file);
 		const fileStat = fs.statSync(filePath);
 
@@ -33,7 +34,7 @@ function processSCSSFiles(directory) {
 		} else if (file.endsWith(".scss")) {
 			removeFirstLine(filePath);
 		}
-	});
+	}
 }
 
 processSCSSFiles(directoryPath);
