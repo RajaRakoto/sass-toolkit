@@ -1,46 +1,46 @@
 @charset "UTF-8";
 
-// utilities > lists
-@import './utilities/lists/list-of-anchor-pseudo-classes';
-@import './utilities/lists/list-of-buttons';
-@import './utilities/lists/list-of-counter-styles';
-@import './utilities/lists/list-of-directions';
-@import './utilities/lists/list-of-length-units';
-@import './utilities/lists/list-of-text-inputs';
+// utils > lists
+@import './src/utils/lists/list-of-anchor-pseudo-classes';
+@import './src/utils/lists/list-of-buttons';
+@import './src/utils/lists/list-of-counter-styles';
+@import './src/utils/lists/list-of-directions';
+@import './src/utils/lists/list-of-length-units';
+@import './src/utils/lists/list-of-text-inputs';
 
-// utilities > maps
-@import './utilities/maps/map-for-breakpoints';
-@import './utilities/maps/map-for-directions';
-@import './utilities/maps/map-for-font-formats';
-@import './utilities/maps/map-for-positions';
-@import './utilities/maps/map-for-smartphones';
-@import './utilities/maps/map-for-tablets';
+// utils > maps
+@import './src/utils/maps/map-for-breakpoints';
+@import './src/utils/maps/map-for-directions';
+@import './src/utils/maps/map-for-font-formats';
+@import './src/utils/maps/map-for-positions';
+@import './src/utils/maps/map-for-smartphones';
+@import './src/utils/maps/map-for-tablets';
 
-// utilities
-@import './utilities/border-box';
-@import './utilities/clear-unit';
-@import './utilities/clear-whitespace';
-@import './utilities/color';
-@import './utilities/convert-to-em';
-@import './utilities/convert-to-number';
-@import './utilities/convert-to-rem';
-@import './utilities/darken';
-@import './utilities/font-sizer';
-@import './utilities/font-source';
-@import './utilities/is-color';
-@import './utilities/is-number';
-@import './utilities/is-time';
-@import './utilities/lighten';
-@import './utilities/map-deep-get';
-@import './utilities/null';
-@import './utilities/pixelify';
-@import './utilities/pseudo-selector';
-@import './utilities/remify';
-@import './utilities/shorthand-property';
-@import './utilities/stretched-link';
-@import './utilities/validate-breakpoint';
-@import './utilities/validate-length';
-@import './utilities/validate-scissors';
+// utils
+@import './src/utils/border-box';
+@import './src/utils/clear-unit';
+@import './src/utils/clear-whitespace';
+@import './src/utils/color';
+@import './src/utils/convert-to-em';
+@import './src/utils/convert-to-number';
+@import './src/utils/convert-to-rem';
+@import './src/utils/darken';
+@import './src/utils/font-sizer';
+@import './src/utils/font-source';
+@import './src/utils/is-color';
+@import './src/utils/is-number';
+@import './src/utils/is-time';
+@import './src/utils/lighten';
+@import './src/utils/map-deep-get';
+@import './src/utils/null';
+@import './src/utils/pixelify';
+@import './src/utils/pseudo-selector';
+@import './src/utils/remify';
+@import './src/utils/shorthand-property';
+@import './src/utils/stretched-link';
+@import './src/utils/validate-breakpoint';
+@import './src/utils/validate-length';
+@import './src/utils/validate-scissors';
 
 // src > basics
 @import './src/basics/animation';
