@@ -1,29 +1,29 @@
 @charset "UTF-8";
 
 @mixin animate-pulse(
-  $count: $countDefault,
-  $duration: $durationDefault,
-  $delay: $delayDefault,
-  $function: $functionDefault,
-  $fill: $fillDefault,
-  $visibility: $visibilityDefault
+	$count: $countDefault,
+	$duration: $durationDefault,
+	$delay: $delayDefault,
+	$function: $functionDefault,
+	$fill: $fillDefault,
+	$visibility: $visibilityDefault
 ) {
-  @include keyframes(animate-pulse) {
-    0% {
-      @include transform(scale(1));
-    }
-    50% {
-      @include transform(scale(1.1));
-    }
-    100% {
-      @include transform(scale(1));
-    }
-  }
-  @include animation-name(animate-pulse);
-  @include count($count);
-  @include duration($duration);
-  @include delay($delay);
-  @include function($function);
-  @include fill-mode($fill);
-  @include visibility($visibility);
+	@include keyframes(animate-pulse) {
+		0% {
+			@include transform(scale(1));
+		}
+		50% {
+			@include transform(scale(1.1));
+		}
+		100% {
+			@include transform(scale(1));
+		}
+	}
+	@include animation-name(animate-pulse);
+	@include count($count);
+	@include duration($duration);
+	@include delay($delay);
+	@include function($function);
+	@include fill-mode($fill);
+	@include visibility($visibility);
 }
