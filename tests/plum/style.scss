@@ -1,18 +1,21 @@
 @charset "UTF-8";
 
-@import '../basics.scss';
-@import './test';
+@import "@raja-rakoto/plum/plum";
+
+@include normalize();
 
 .box {
   @include animation-bounce();
 }
 
+.test1, .test2 {
+  @include flex-box();
+}
+
 .test1 {
-  @extend %flex-test;
   justify-content: space-between;
 }
 
 .test2 {
-  @extend %flex-test;
   flex-direction: column;
 }
