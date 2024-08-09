@@ -148,7 +148,8 @@
 			"bower_components",
 			"jspm_packages",
 			"backups",
-			"tmp"
+			"tmp",
+      "sassdoc"
 		]
 	}
 }
