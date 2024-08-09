@@ -1,20 +1,16 @@
 {
 	"name": "@raja-rakoto/plum",
-	"version": "1.0.0",
+	"version": "1.1.0",
 	"description": "Customize your website faster with PLUM, a mixins toolset powered by SASS. Quickly produce consistent, scalable CSS output, regardless of project size 🩷",
 	"author": "Raja Rakotonirina <raja.rakoto7@gmail.com>",
 	"license": "MIT",
 	"type": "module",
-	"module": "index.ts",
-	"main": "./dist/index.js",
-	"types": "./dist/index.d.ts",
 	"repository": {
 		"type": "git",
 		"url": "git+https://github.com/RajaRakoto/plum.git"
 	},
 	"homepage": "https://github.com/RajaRakoto/plum#readme",
 	"bugs": "https://github.com/RajaRakoto/plum/issues",
-	"files": ["dist"],
 	"keywords": [
 		"plum",
 		"css",

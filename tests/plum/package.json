@@ -1,0 +1,15 @@
+{
+  "name": "plum",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "watch:sass": "sass --watch style.scss:style.css --load-path=node_modules --style=compressed"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@raja-rakoto/plum": "^1.1.0"
+  }
+}
