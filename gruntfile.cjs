@@ -24,8 +24,8 @@ module.exports = (grunt) => {
 				files: [
 					// scss file list
 					{
-						src: ["./test/style.scss"],
-						dest: "./test/style.css",
+						src: ["./tests/plum/style.scss"],
+						dest: "./tests/plum/style.css",
 					},
 				],
 			},
@@ -47,6 +47,15 @@ module.exports = (grunt) => {
 				files: [{ src: ["./*", "./.*"] }],
 				filter: "isFile",
 			},
+			github: {
+				options: {
+					archive: `${backupsDestination}github.tar.gz`,
+				},
+				expand: true,
+				cwd: "./.github/",
+				src: includeAllFiles,
+				dest: "github",
+			},
 			docs: {
 				options: {
 					archive: `${backupsDestination}docs.tar.gz`,
@@ -65,15 +74,6 @@ module.exports = (grunt) => {
 				src: includeAllFiles,
 				dest: "modules",
 			},
-			scripts: {
-				options: {
-					archive: `${backupsDestination}scripts.tar.gz`,
-				},
-				expand: true,
-				cwd: "./scripts/",
-				src: includeAllFiles,
-				dest: "scripts",
-			},
 			src: {
 				options: {
 					archive: `${backupsDestination}src.tar.gz`,
@@ -83,14 +83,14 @@ module.exports = (grunt) => {
 				src: includeAllFiles,
 				dest: "src",
 			},
-			test: {
+			tests: {
 				options: {
-					archive: `${backupsDestination}test.tar.gz`,
+					archive: `${backupsDestination}tests.tar.gz`,
 				},
 				expand: true,
-				cwd: "./test/",
+				cwd: "./tests/",
 				src: includeAllFiles,
-				dest: "test",
+				dest: "tests",
 			},
 			tmp: {
 				options: {
@@ -100,15 +100,6 @@ module.exports = (grunt) => {
 				cwd: "./tmp/",
 				src: includeAllFiles,
 				dest: "tmp",
-			},
-			utilities: {
-				options: {
-					archive: `${backupsDestination}utilities.tar.gz`,
-				},
-				expand: true,
-				cwd: "./utilities/",
-				src: includeAllFiles,
-				dest: "utilities",
 			},
 		},
 
@@ -125,13 +116,12 @@ module.exports = (grunt) => {
 	// all grunt register tasks
 	grunt.registerTask("backup", [
 		"compress:main",
+		"compress:github",
 		"compress:docs",
 		"compress:modules",
-		"compress:scripts",
 		"compress:src",
-		"compress:test",
+		"compress:tests",
 		"compress:tmp",
-		"compress:utilities",
 	]);
 	grunt.registerTask("sass-task", ["sass:test"]);
 	grunt.registerTask("test", ["watch:sass"]);
@@ -140,7 +130,7 @@ module.exports = (grunt) => {
 	// all tasks lists
 	const plumTaskNames = ["backup", "test", "documentation"];
 	const plumTaskStatus = [
-		"compress: main | docs | modules | scripts | src | test | tmp | utilities",
+		"compress: main | github | docs | modules | src | tests | tmp",
 		"watching sass files changes in test folder",
 		"generate & open plum documentation with sassdoc",
 	];
