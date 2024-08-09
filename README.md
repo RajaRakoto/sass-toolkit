@@ -1,4 +1,3 @@
-
 <div align="center">
 <img src="https://github.com/RajaRakoto/github-docs/blob/master/plum/plum-gray.png?raw=true" width=512>
 </div>
@@ -12,7 +11,6 @@
 **Accelerate your website customization process with PLUM — an efficient mixins toolset driven by SASS. Easily generate uniform, adaptable CSS stylesheets, regardless of project magnitude. Seamlessly incorporate third-party modules like animate, buttons2, flex, grid, hover2, magic, buttons, open-color, shadows ... Enjoy effortless integration with popular CSS frameworks such as Bootstrap for enhanced versatility.**
 
 > Additional tools such as [Plum CLI](https://github.com/RajaRakoto/plum-cli) and [Plum Extension](https://github.com/RajaRakoto/plum-extension) for VSCode are utilized to enhance the use of **Plum** package.
-
 
 ---
 
@@ -40,7 +38,6 @@ If you use [sass](https://www.npmjs.com/package/sass) package for compiling your
 },
 ```
 
-
 ---
 
 ### 📌 Basics
@@ -48,6 +45,7 @@ If you use [sass](https://www.npmjs.com/package/sass) package for compiling your
 Plum's main attributes are consolidated through a mix of diverse mixins and useful functions that users can conveniently access offline via the [plum CLI](https://github.com/RajaRakoto/plum-cli), facilitating easy access to the official documentation.
 
 **Here are some simple examples of different ways to use Plum (you can refer to all use cases in the plum-cli documentation):**
+
 ```scss
 @import '@raja-rakoto/plum/plum';
 
@@ -189,7 +187,6 @@ img {
 }
 ```
 
-
 ---
 
 ### 📌 Extension (VSCode)
@@ -217,10 +214,9 @@ plum-[category]-[name...] // e.g: plum-modules-oc-grape
 - input
 - image
 - position
-...
+  ...
 
 `[name]`: This designation denotes a mixin, function, module, or framework name. It acts as a quick identifier for the specific code snippet you wish to employ. For example, if you're opting for the "blue" color scheme, simply typing "plum-blue" will prompt the extension to suggest "plum-modules-oc-blue" for your selection.
-
 
 ---
 
@@ -294,35 +290,41 @@ h1 {
 
 **`Shadows`** (app): Collection of shadow variants for your boxes !
 
-
 ---
 
 ### 📌 NPM Scripts
 
 **scripts (utils)**
+
 - 📜 `script:global-docs` - Generate README.md for documentation
 - 📜 `script:global-charset` - Adds the @charset "UTF-8" declaration at the beginning of all SCSS files in the project.
 - 📜 `script:hover-comment` - Used to remove the first line of a SCSS file if it starts with a comment.
 
 **Testing**
+
 - 📜 `test` - Run the watched file for sass testing.
 
 **Documentation**
+
 - 📜 `documentation` - Generate offline docs with Sassdoc
 
 **Linting and Formatting**
+
 - 📜 `eslint` - Lint source files with ESLint.
 - 📜 `prettier` - Reformat source files with Prettier.
 
 **Backup and Dependency Management**
+
 - 📜 `backup` - Backup files with Grunt.
 - 📜 `pkg-check` - Check useless dependencies with depcheck.
 - 📜 `pkg-upgrade` - Upgrade outdated dependencies (interactive mode) with npm-check-updates.
 
 **Versioning**
+
 - 📜 `versioning` - Start ungit server.
 
 **npm Commands**
+
 - 📜 `npm-version:major` - Increments the major version number of your project using npm.
 - 📜 `npm-version:minor` - Increments the minor version number of your project using npm.
 - 📜 `npm-version:patch` - Increments the version patch number of your project using npm.
@@ -336,4 +338,3 @@ h1 {
 - 📜 `npm-proxy:publish` - Publish your npm package via the local proxy.
 - 📜 `npm-proxy:unpublish` - Forcefully unpublish the plum package from the npm registry via the local proxy.
 - 📜 `npm-proxy:republish` - Republish your npm package by first unpublishing it and then publishing it again via the local proxy.
-
