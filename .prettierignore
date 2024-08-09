@@ -11,3 +11,14 @@ bower_components
 jspm_packages
 
 # own
+*.ts
+*.js
+*.mts
+*.mjs
+*.cjs
+*.json
+docs
+sassdoc
+src
+tests
+tmp
