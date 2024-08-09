@@ -41,7 +41,7 @@
 		"build": "bun run clean && bun run build.js",
 		"build:watch": "bun build src/index.ts --outdir dist --watch",
 		"build:bin": "bun build --compile --minify --sourcemap src/index.ts --outfile dist/plum",
-		"test": "grunt test",
+		"test:plum": "grunt test",
 		"test:unit": "bun test",
 		"test:unit:watch": "bun test --watch",
 		"documentation": "grunt documentation",

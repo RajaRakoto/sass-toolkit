@@ -28,7 +28,7 @@ export const npm_scripts = `
 - 📜 \`build:bin\` - bun's bundler implements a --compile flag for generating a standalone binary from a TypeScript or JavaScript file, use this in your production environment to ensure optimal execution of your app.
 
 **Testing**
-- 📜 \`test\` - Run the watched file for sass testing.
+- 📜 \`test:plum\` - Run the watched file for sass testing.
 - 📜 \`test:unit\` - Run bun test.
 - 📜 \`test:unit:watch\` - Interactive watch mode to automatically re-run tests with bun.
 
