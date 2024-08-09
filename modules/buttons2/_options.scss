@@ -10,13 +10,13 @@
 * We kindly ask you not to use the prefix $ubtn in your project
 * in order to avoid possilbe name conflicts. Thanks!
 */
-$ubtn: 'Unicorn Buttons';
+$ubtn: "Unicorn Buttons";
 
 /*
 * Button Namespace (ex .button or .btn)
 *
 */
-$ubtn-namespace: '.button' !default; //prefix for all classes
+$ubtn-namespace: ".button" !default; //prefix for all classes
 
 /*
 * Button Defaults
@@ -32,8 +32,8 @@ $ubtn-font-color: #666 !default;
 $ubtn-font-weight: 300 !default;
 $ubtn-font-size: 16px !default;
 $ubtn-height: 40px !default;
-$ubtn-font-family: 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial,
-  'Lucida Grande', sans-serif !default;
+$ubtn-font-family: "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial,
+	"Lucida Grande", sans-serif !default;
 
 /*
 * Button Colors
@@ -43,9 +43,9 @@ $ubtn-font-family: 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial,
 * Each block contains the (name, background, color)
 * The class is generated using the name: (ex .button-primary)
 */
-$ubtn-colors: ('primary' #1b9af7 #fff) ('plain' #fff #1b9af7)
-  ('inverse' #222 #eee) ('action' #a5de37 #fff) ('highlight' #feae1b #fff)
-  ('caution' #ff4351 #fff) ('royal' #7b72e9 #fff) !default;
+$ubtn-colors: ("primary" #1b9af7 #fff) ("plain" #fff #1b9af7)
+	("inverse" #222 #eee) ("action" #a5de37 #fff) ("highlight" #feae1b #fff)
+	("caution" #ff4351 #fff) ("royal" #7b72e9 #fff) !default;
 
 /*
 * Button Shapes
@@ -74,7 +74,7 @@ $ubtn-shapes: (square 0) (box 10px) (rounded 4px) (pill 200px) (circle 100%) !de
 * The class is generated using the name: (ex .button-giant).
 */
 $ubtn-sizes: (giant 1.75) (jumbo 1.5) (large 1.25) (normal 1) (small 0.75)
-  (tiny 0.6) !default;
+	(tiny 0.6) !default;
 // Use a map if you prefer when running Sass 3.3+
 // $ubtn-sizes: (
 //   giant: 2,

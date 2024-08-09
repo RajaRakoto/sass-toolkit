@@ -1,31 +1,31 @@
 @charset "UTF-8";
 
 @mixin icon-down {
-  @include keyframes(#{$nameSpace}-icon-down) {
-    0%,
-    50%,
-    100% {
-      @include prefixed(transform, translateY(0));
-    }
-    25%,
-    75% {
-      @include prefixed(transform, translateY(6px));
-    }
-  }
+	@include keyframes(#{$nameSpace}-icon-down) {
+		0%,
+		50%,
+		100% {
+			@include prefixed(transform, translateY(0));
+		}
+		25%,
+		75% {
+			@include prefixed(transform, translateY(6px));
+		}
+	}
 
-  @include hacks();
+	@include hacks();
 
-  .hvr-icon {
-    @include prefixed(transform, translateZ(0));
-  }
+	.hvr-icon {
+		@include prefixed(transform, translateZ(0));
+	}
 
-  &:hover,
-  &:focus,
-  &:active {
-    .hvr-icon {
-      @include prefixed(animation-name, #{$nameSpace}-icon-down);
-      @include prefixed(animation-duration, 0.75s);
-      @include prefixed(animation-timing-function, ease-out);
-    }
-  }
+	&:hover,
+	&:focus,
+	&:active {
+		.hvr-icon {
+			@include prefixed(animation-name, #{$nameSpace}-icon-down);
+			@include prefixed(animation-duration, 0.75s);
+			@include prefixed(animation-timing-function, ease-out);
+		}
+	}
 }

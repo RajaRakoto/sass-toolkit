@@ -1,995 +1,995 @@
 @charset "UTF-8";
 
-@import 'banner';
-@import 'options';
-@import 'mixins';
-@import 'hacks';
+@import "banner";
+@import "options";
+@import "mixins";
+@import "hacks";
 
-@import 'effects/2d-transitions/grow';
+@import "effects/2d-transitions/grow";
 @mixin hover2-2d-transitions-grow() {
-  @if $includeClasses {
-    .#{$nameSpace}-grow {
-      @include grow();
-    }
-  }
+	@if $includeClasses {
+		.#{$nameSpace}-grow {
+			@include grow();
+		}
+	}
 }
 
-@import 'effects/2d-transitions/shrink';
+@import "effects/2d-transitions/shrink";
 @mixin hover2-2d-transitions-shrink() {
-  @if $includeClasses {
-    .#{$nameSpace}-shrink {
-      @include shrink();
-    }
-  }
+	@if $includeClasses {
+		.#{$nameSpace}-shrink {
+			@include shrink();
+		}
+	}
 }
 
-@import 'effects/2d-transitions/pulse';
+@import "effects/2d-transitions/pulse";
 @mixin hover2-2d-transitions-pulse() {
-  @if $includeClasses {
-    .#{$nameSpace}-pulse {
-      @include pulse();
-    }
-  }
+	@if $includeClasses {
+		.#{$nameSpace}-pulse {
+			@include pulse();
+		}
+	}
 }
 
-@import 'effects/2d-transitions/pulse-grow';
+@import "effects/2d-transitions/pulse-grow";
 @mixin hover2-2d-transitions-pulse-grow() {
-  @if $includeClasses {
-    .#{$nameSpace}-pulse-grow {
-      @include pulse-grow();
-    }
-  }
+	@if $includeClasses {
+		.#{$nameSpace}-pulse-grow {
+			@include pulse-grow();
+		}
+	}
 }
 
-@import 'effects/2d-transitions/pulse-shrink';
+@import "effects/2d-transitions/pulse-shrink";
 @mixin hover2-2d-transitions-pulse-shrink() {
-  @if $includeClasses {
-    .#{$nameSpace}-pulse-shrink {
-      @include pulse-shrink();
-    }
-  }
+	@if $includeClasses {
+		.#{$nameSpace}-pulse-shrink {
+			@include pulse-shrink();
+		}
+	}
 }
 
-@import 'effects/2d-transitions/push';
+@import "effects/2d-transitions/push";
 @mixin hover2-2d-transitions-push() {
-  @if $includeClasses {
-    .#{$nameSpace}-push {
-      @include push();
-    }
-  }
+	@if $includeClasses {
+		.#{$nameSpace}-push {
+			@include push();
+		}
+	}
 }
 
-@import 'effects/2d-transitions/pop';
+@import "effects/2d-transitions/pop";
 @mixin hover2-2d-transitions-pop() {
-  @if $includeClasses {
-    .#{$nameSpace}-pop {
-      @include pop();
-    }
-  }
+	@if $includeClasses {
+		.#{$nameSpace}-pop {
+			@include pop();
+		}
+	}
 }
 
-@import 'effects/2d-transitions/bounce-in';
+@import "effects/2d-transitions/bounce-in";
 @mixin hover2-2d-transitions-bounce-in() {
-  @if $includeClasses {
-    .#{$nameSpace}-bounce-in {
-      @include bounce-in();
-    }
-  }
+	@if $includeClasses {
+		.#{$nameSpace}-bounce-in {
+			@include bounce-in();
+		}
+	}
 }
 
-@import 'effects/2d-transitions/bounce-out';
+@import "effects/2d-transitions/bounce-out";
 @mixin hover2-2d-transitions-bounce-out() {
-  @if $includeClasses {
-    .#{$nameSpace}-bounce-out {
-      @include bounce-out();
-    }
-  }
+	@if $includeClasses {
+		.#{$nameSpace}-bounce-out {
+			@include bounce-out();
+		}
+	}
 }
 
-@import 'effects/2d-transitions/rotate';
+@import "effects/2d-transitions/rotate";
 @mixin hover2-2d-transitions-rotate() {
-  @if $includeClasses {
-    .#{$nameSpace}-rotate {
-      @include rotate();
-    }
-  }
+	@if $includeClasses {
+		.#{$nameSpace}-rotate {
+			@include rotate();
+		}
+	}
 }
 
-@import 'effects/2d-transitions/grow-rotate';
+@import "effects/2d-transitions/grow-rotate";
 @mixin hover2-2d-transitions-grow-rotate() {
-  @if $includeClasses {
-    .#{$nameSpace}-grow-rotate {
-      @include grow-rotate();
-    }
-  }
+	@if $includeClasses {
+		.#{$nameSpace}-grow-rotate {
+			@include grow-rotate();
+		}
+	}
 }
 
-@import 'effects/2d-transitions/float';
+@import "effects/2d-transitions/float";
 @mixin hover2-2d-transitions-float() {
-  @if $includeClasses {
-    .#{$nameSpace}-float {
-      @include float();
-    }
-  }
+	@if $includeClasses {
+		.#{$nameSpace}-float {
+			@include float();
+		}
+	}
 }
 
-@import 'effects/2d-transitions/sink';
+@import "effects/2d-transitions/sink";
 @mixin hover2-2d-transitions-sink() {
-  @if $includeClasses {
-    .#{$nameSpace}-sink {
-      @include sink();
-    }
-  }
+	@if $includeClasses {
+		.#{$nameSpace}-sink {
+			@include sink();
+		}
+	}
 }
 
-@import 'effects/2d-transitions/bob';
+@import "effects/2d-transitions/bob";
 @mixin hover2-2d-transitions-bob() {
-  @if $includeClasses {
-    .#{$nameSpace}-bob {
-      @include bob();
-    }
-  }
+	@if $includeClasses {
+		.#{$nameSpace}-bob {
+			@include bob();
+		}
+	}
 }
 
-@import 'effects/2d-transitions/hang';
+@import "effects/2d-transitions/hang";
 @mixin hover2-2d-transitions-hang() {
-  @if $includeClasses {
-    .#{$nameSpace}-hang {
-      @include hang();
-    }
-  }
+	@if $includeClasses {
+		.#{$nameSpace}-hang {
+			@include hang();
+		}
+	}
 }
 
-@import 'effects/2d-transitions/skew';
+@import "effects/2d-transitions/skew";
 @mixin hover2-2d-transitions-skew() {
-  @if $includeClasses {
-    .#{$nameSpace}-skew {
-      @include skew();
-    }
-  }
+	@if $includeClasses {
+		.#{$nameSpace}-skew {
+			@include skew();
+		}
+	}
 }
 
-@import 'effects/2d-transitions/skew-forward';
+@import "effects/2d-transitions/skew-forward";
 @mixin hover2-2d-transitions-skew-forward() {
-  @if $includeClasses {
-    .#{$nameSpace}-skew-forward {
-      @include skew-forward();
-    }
-  }
+	@if $includeClasses {
+		.#{$nameSpace}-skew-forward {
+			@include skew-forward();
+		}
+	}
 }
 
-@import 'effects/2d-transitions/skew-backward';
+@import "effects/2d-transitions/skew-backward";
 @mixin hover2-2d-transitions-skew-backward() {
-  @if $includeClasses {
-    .#{$nameSpace}-skew-backward {
-      @include skew-backward();
-    }
-  }
+	@if $includeClasses {
+		.#{$nameSpace}-skew-backward {
+			@include skew-backward();
+		}
+	}
 }
 
-@import 'effects/2d-transitions/wobble-vertical';
+@import "effects/2d-transitions/wobble-vertical";
 @mixin hover2-2d-transitions-wobble-vertical() {
-  @if $includeClasses {
-    .#{$nameSpace}-wobble-vertical {
-      @include wobble-vertical();
-    }
-  }
+	@if $includeClasses {
+		.#{$nameSpace}-wobble-vertical {
+			@include wobble-vertical();
+		}
+	}
 }
 
-@import 'effects/2d-transitions/wobble-horizontal';
+@import "effects/2d-transitions/wobble-horizontal";
 @mixin hover2-2d-transitions-wobble-horizontal() {
-  @if $includeClasses {
-    .#{$nameSpace}-wobble-horizontal {
-      @include wobble-horizontal();
-    }
-  }
+	@if $includeClasses {
+		.#{$nameSpace}-wobble-horizontal {
+			@include wobble-horizontal();
+		}
+	}
 }
 
-@import 'effects/2d-transitions/wobble-to-bottom-right';
+@import "effects/2d-transitions/wobble-to-bottom-right";
 @mixin hover2-2d-transitions-wobble-to-bottom-right() {
-  @if $includeClasses {
-    .#{$nameSpace}-wobble-to-bottom-right {
-      @include wobble-to-bottom-right();
-    }
-  }
+	@if $includeClasses {
+		.#{$nameSpace}-wobble-to-bottom-right {
+			@include wobble-to-bottom-right();
+		}
+	}
 }
 
-@import 'effects/2d-transitions/wobble-to-top-right';
+@import "effects/2d-transitions/wobble-to-top-right";
 @mixin hover2-2d-transitions-wobble-to-top-right() {
-  @if $includeClasses {
-    .#{$nameSpace}-wobble-to-top-right {
-      @include wobble-to-top-right();
-    }
-  }
+	@if $includeClasses {
+		.#{$nameSpace}-wobble-to-top-right {
+			@include wobble-to-top-right();
+		}
+	}
 }
 
-@import 'effects/2d-transitions/wobble-top';
+@import "effects/2d-transitions/wobble-top";
 @mixin hover2-2d-transitions-wobble-top() {
-  @if $includeClasses {
-    .#{$nameSpace}-wobble-top {
-      @include wobble-top();
-    }
-  }
+	@if $includeClasses {
+		.#{$nameSpace}-wobble-top {
+			@include wobble-top();
+		}
+	}
 }
-@import 'effects/2d-transitions/wobble-bottom';
+@import "effects/2d-transitions/wobble-bottom";
 @mixin hover2-2d-transitions-wobble-bottom() {
-  @if $includeClasses {
-    .#{$nameSpace}-wobble-bottom {
-      @include wobble-bottom();
-    }
-  }
+	@if $includeClasses {
+		.#{$nameSpace}-wobble-bottom {
+			@include wobble-bottom();
+		}
+	}
 }
 
-@import 'effects/2d-transitions/wobble-skew';
+@import "effects/2d-transitions/wobble-skew";
 @mixin hover2-2d-transitions-wobble-skew() {
-  @if $includeClasses {
-    .#{$nameSpace}-wobble-skew {
-      @include wobble-skew();
-    }
-  }
+	@if $includeClasses {
+		.#{$nameSpace}-wobble-skew {
+			@include wobble-skew();
+		}
+	}
 }
 
-@import 'effects/2d-transitions/buzz';
+@import "effects/2d-transitions/buzz";
 @mixin hover2-2d-transitions-buzz() {
-  @if $includeClasses {
-    .#{$nameSpace}-buzz {
-      @include buzz();
-    }
-  }
+	@if $includeClasses {
+		.#{$nameSpace}-buzz {
+			@include buzz();
+		}
+	}
 }
 
-@import 'effects/2d-transitions/buzz-out';
+@import "effects/2d-transitions/buzz-out";
 @mixin hover2-2d-transitions-buzz-out() {
-  @if $includeClasses {
-    .#{$nameSpace}-buzz-out {
-      @include buzz-out();
-    }
-  }
+	@if $includeClasses {
+		.#{$nameSpace}-buzz-out {
+			@include buzz-out();
+		}
+	}
 }
 
-@import 'effects/2d-transitions/forward';
+@import "effects/2d-transitions/forward";
 @mixin hover2-2d-transitions-forward() {
-  @if $includeClasses {
-    .#{$nameSpace}-forward {
-      @include forward();
-    }
-  }
+	@if $includeClasses {
+		.#{$nameSpace}-forward {
+			@include forward();
+		}
+	}
 }
 
-@import 'effects/2d-transitions/backward';
+@import "effects/2d-transitions/backward";
 @mixin hover2-2d-transitions-backward() {
-  @if $includeClasses {
-    .#{$nameSpace}-backward {
-      @include backward();
-    }
-  }
+	@if $includeClasses {
+		.#{$nameSpace}-backward {
+			@include backward();
+		}
+	}
 }
 
-@import 'effects/background-transitions/fade';
+@import "effects/background-transitions/fade";
 @mixin hover2-background-transitions-fade() {
-  @if $includeClasses {
-    .#{$nameSpace}-fade {
-      @include fade();
-    }
-  }
+	@if $includeClasses {
+		.#{$nameSpace}-fade {
+			@include fade();
+		}
+	}
 }
 
-@import 'effects/background-transitions/back-pulse';
+@import "effects/background-transitions/back-pulse";
 @mixin hover2-background-transitions-back-pulse() {
-  @if $includeClasses {
-    .#{$nameSpace}-back-pulse {
-      @include back-pulse();
-    }
-  }
+	@if $includeClasses {
+		.#{$nameSpace}-back-pulse {
+			@include back-pulse();
+		}
+	}
 }
 
-@import 'effects/background-transitions/sweep-to-right';
+@import "effects/background-transitions/sweep-to-right";
 @mixin hover2-background-transitions-sweep-to-right() {
-  @if $includeClasses {
-    .#{$nameSpace}-sweep-to-right {
-      @include sweep-to-right();
-    }
-  }
+	@if $includeClasses {
+		.#{$nameSpace}-sweep-to-right {
+			@include sweep-to-right();
+		}
+	}
 }
 
-@import 'effects/background-transitions/sweep-to-left';
+@import "effects/background-transitions/sweep-to-left";
 @mixin hover2-background-transitions-sweep-to-left() {
-  @if $includeClasses {
-    .#{$nameSpace}-sweep-to-left {
-      @include sweep-to-left();
-    }
-  }
+	@if $includeClasses {
+		.#{$nameSpace}-sweep-to-left {
+			@include sweep-to-left();
+		}
+	}
 }
 
-@import 'effects/background-transitions/sweep-to-bottom';
+@import "effects/background-transitions/sweep-to-bottom";
 @mixin hover2-background-transitions-sweep-to-bottom() {
-  @if $includeClasses {
-    .#{$nameSpace}-sweep-to-bottom {
-      @include sweep-to-bottom();
-    }
-  }
+	@if $includeClasses {
+		.#{$nameSpace}-sweep-to-bottom {
+			@include sweep-to-bottom();
+		}
+	}
 }
 
-@import 'effects/background-transitions/sweep-to-top';
+@import "effects/background-transitions/sweep-to-top";
 @mixin hover2-background-transitions-sweep-to-top() {
-  @if $includeClasses {
-    .#{$nameSpace}-sweep-to-top {
-      @include sweep-to-top();
-    }
-  }
+	@if $includeClasses {
+		.#{$nameSpace}-sweep-to-top {
+			@include sweep-to-top();
+		}
+	}
 }
 
-@import 'effects/background-transitions/bounce-to-right';
+@import "effects/background-transitions/bounce-to-right";
 @mixin hover2-background-transitions-bounce-to-right() {
-  @if $includeClasses {
-    .#{$nameSpace}-bounce-to-right {
-      @include bounce-to-right();
-    }
-  }
+	@if $includeClasses {
+		.#{$nameSpace}-bounce-to-right {
+			@include bounce-to-right();
+		}
+	}
 }
 
-@import 'effects/background-transitions/bounce-to-left';
+@import "effects/background-transitions/bounce-to-left";
 @mixin hover2-background-transitions-bounce-to-left() {
-  @if $includeClasses {
-    .#{$nameSpace}-bounce-to-left {
-      @include bounce-to-left();
-    }
-  }
+	@if $includeClasses {
+		.#{$nameSpace}-bounce-to-left {
+			@include bounce-to-left();
+		}
+	}
 }
 
-@import 'effects/background-transitions/bounce-to-bottom';
+@import "effects/background-transitions/bounce-to-bottom";
 @mixin hover2-background-transitions-bounce-to-bottom() {
-  @if $includeClasses {
-    .#{$nameSpace}-bounce-to-bottom {
-      @include bounce-to-bottom();
-    }
-  }
+	@if $includeClasses {
+		.#{$nameSpace}-bounce-to-bottom {
+			@include bounce-to-bottom();
+		}
+	}
 }
 
-@import 'effects/background-transitions/bounce-to-top';
+@import "effects/background-transitions/bounce-to-top";
 @mixin hover2-background-transitions-bounce-to-top() {
-  @if $includeClasses {
-    .#{$nameSpace}-bounce-to-top {
-      @include bounce-to-top();
-    }
-  }
+	@if $includeClasses {
+		.#{$nameSpace}-bounce-to-top {
+			@include bounce-to-top();
+		}
+	}
 }
 
-@import 'effects/background-transitions/radial-out';
+@import "effects/background-transitions/radial-out";
 @mixin hover2-background-transitions-radial-out() {
-  @if $includeClasses {
-    .#{$nameSpace}-radial-out {
-      @include radial-out();
-    }
-  }
+	@if $includeClasses {
+		.#{$nameSpace}-radial-out {
+			@include radial-out();
+		}
+	}
 }
 
-@import 'effects/background-transitions/radial-in';
+@import "effects/background-transitions/radial-in";
 @mixin hover2-background-transitions-radial-in() {
-  @if $includeClasses {
-    .#{$nameSpace}-radial-in {
-      @include radial-in();
-    }
-  }
+	@if $includeClasses {
+		.#{$nameSpace}-radial-in {
+			@include radial-in();
+		}
+	}
 }
 
-@import 'effects/background-transitions/rectangle-in';
+@import "effects/background-transitions/rectangle-in";
 @mixin hover2-background-transitions-rectangle-in() {
-  @if $includeClasses {
-    .#{$nameSpace}-rectangle-in {
-      @include rectangle-in();
-    }
-  }
+	@if $includeClasses {
+		.#{$nameSpace}-rectangle-in {
+			@include rectangle-in();
+		}
+	}
 }
 
-@import 'effects/background-transitions/rectangle-out';
+@import "effects/background-transitions/rectangle-out";
 @mixin hover2-background-transitions-rectangle-out() {
-  @if $includeClasses {
-    .#{$nameSpace}-rectangle-out {
-      @include rectangle-out();
-    }
-  }
+	@if $includeClasses {
+		.#{$nameSpace}-rectangle-out {
+			@include rectangle-out();
+		}
+	}
 }
 
-@import 'effects/background-transitions/shutter-in-horizontal';
+@import "effects/background-transitions/shutter-in-horizontal";
 @mixin hover2-background-transitions-shutter-in-horizontal() {
-  @if $includeClasses {
-    .#{$nameSpace}-shutter-in-horizontal {
-      @include shutter-in-horizontal();
-    }
-  }
+	@if $includeClasses {
+		.#{$nameSpace}-shutter-in-horizontal {
+			@include shutter-in-horizontal();
+		}
+	}
 }
 
-@import 'effects/background-transitions/shutter-out-horizontal';
+@import "effects/background-transitions/shutter-out-horizontal";
 @mixin hover2-background-transitions-shutter-out-horizontal() {
-  @if $includeClasses {
-    .#{$nameSpace}-shutter-out-horizontal {
-      @include shutter-out-horizontal();
-    }
-  }
+	@if $includeClasses {
+		.#{$nameSpace}-shutter-out-horizontal {
+			@include shutter-out-horizontal();
+		}
+	}
 }
 
-@import 'effects/background-transitions/shutter-in-vertical';
+@import "effects/background-transitions/shutter-in-vertical";
 @mixin hover2-background-transitions-shutter-in-vertical() {
-  @if $includeClasses {
-    .#{$nameSpace}-shutter-in-vertical {
-      @include shutter-in-vertical();
-    }
-  }
+	@if $includeClasses {
+		.#{$nameSpace}-shutter-in-vertical {
+			@include shutter-in-vertical();
+		}
+	}
 }
 
-@import 'effects/background-transitions/shutter-out-vertical';
+@import "effects/background-transitions/shutter-out-vertical";
 @mixin hover2-background-transitions-shutter-out-vertical() {
-  @if $includeClasses {
-    .#{$nameSpace}-shutter-out-vertical {
-      @include shutter-out-vertical();
-    }
-  }
+	@if $includeClasses {
+		.#{$nameSpace}-shutter-out-vertical {
+			@include shutter-out-vertical();
+		}
+	}
 }
 
-@import 'effects/border-transitions/border-fade';
+@import "effects/border-transitions/border-fade";
 @mixin hover2-border-transitions-border-fade() {
-  @if $includeClasses {
-    .#{$nameSpace}-border-fade {
-      @include border-fade();
-    }
-  }
+	@if $includeClasses {
+		.#{$nameSpace}-border-fade {
+			@include border-fade();
+		}
+	}
 }
 
-@import 'effects/border-transitions/hollow';
+@import "effects/border-transitions/hollow";
 @mixin hover2-border-transitions-hollow() {
-  @if $includeClasses {
-    .#{$nameSpace}-hollow {
-      @include hollow();
-    }
-  }
+	@if $includeClasses {
+		.#{$nameSpace}-hollow {
+			@include hollow();
+		}
+	}
 }
 
-@import 'effects/border-transitions/trim';
+@import "effects/border-transitions/trim";
 @mixin hover2-border-transitions-trim() {
-  @if $includeClasses {
-    .#{$nameSpace}-trim {
-      @include trim();
-    }
-  }
+	@if $includeClasses {
+		.#{$nameSpace}-trim {
+			@include trim();
+		}
+	}
 }
 
-@import 'effects/border-transitions/ripple-out';
+@import "effects/border-transitions/ripple-out";
 @mixin hover2-border-transitions-ripple-out() {
-  @if $includeClasses {
-    .#{$nameSpace}-ripple-out {
-      @include ripple-out();
-    }
-  }
+	@if $includeClasses {
+		.#{$nameSpace}-ripple-out {
+			@include ripple-out();
+		}
+	}
 }
 
-@import 'effects/border-transitions/ripple-in';
+@import "effects/border-transitions/ripple-in";
 @mixin hover2-border-transitions-ripple-in() {
-  @if $includeClasses {
-    .#{$nameSpace}-ripple-in {
-      @include ripple-in();
-    }
-  }
+	@if $includeClasses {
+		.#{$nameSpace}-ripple-in {
+			@include ripple-in();
+		}
+	}
 }
 
-@import 'effects/border-transitions/outline-out';
+@import "effects/border-transitions/outline-out";
 @mixin hover2-border-transitions-outline-out() {
-  @if $includeClasses {
-    .#{$nameSpace}-outline-out {
-      @include outline-out();
-    }
-  }
+	@if $includeClasses {
+		.#{$nameSpace}-outline-out {
+			@include outline-out();
+		}
+	}
 }
 
-@import 'effects/border-transitions/outline-in';
+@import "effects/border-transitions/outline-in";
 @mixin hover2-border-transitions-outline-in() {
-  @if $includeClasses {
-    .#{$nameSpace}-outline-in {
-      @include outline-in();
-    }
-  }
+	@if $includeClasses {
+		.#{$nameSpace}-outline-in {
+			@include outline-in();
+		}
+	}
 }
 
-@import 'effects/border-transitions/round-corners';
+@import "effects/border-transitions/round-corners";
 @mixin hover2-border-transitions-round-corners() {
-  @if $includeClasses {
-    .#{$nameSpace}-round-corners {
-      @include round-corners();
-    }
-  }
+	@if $includeClasses {
+		.#{$nameSpace}-round-corners {
+			@include round-corners();
+		}
+	}
 }
 
-@import 'effects/border-transitions/underline-from-left';
+@import "effects/border-transitions/underline-from-left";
 @mixin hover2-border-transitions-underline-from-left() {
-  @if $includeClasses {
-    .#{$nameSpace}-underline-from-left {
-      @include underline-from-left();
-    }
-  }
+	@if $includeClasses {
+		.#{$nameSpace}-underline-from-left {
+			@include underline-from-left();
+		}
+	}
 }
 
-@import 'effects/border-transitions/underline-from-center';
+@import "effects/border-transitions/underline-from-center";
 @mixin hover2-border-transitions-underline-from-center() {
-  @if $includeClasses {
-    .#{$nameSpace}-underline-from-center {
-      @include underline-from-center();
-    }
-  }
+	@if $includeClasses {
+		.#{$nameSpace}-underline-from-center {
+			@include underline-from-center();
+		}
+	}
 }
 
-@import 'effects/border-transitions/underline-from-right';
+@import "effects/border-transitions/underline-from-right";
 @mixin hover2-border-transitions-underline-from-right() {
-  @if $includeClasses {
-    .#{$nameSpace}-underline-from-right {
-      @include underline-from-right();
-    }
-  }
+	@if $includeClasses {
+		.#{$nameSpace}-underline-from-right {
+			@include underline-from-right();
+		}
+	}
 }
 
-@import 'effects/border-transitions/overline-from-left';
+@import "effects/border-transitions/overline-from-left";
 @mixin hover2-border-transitions-overline-from-left() {
-  @if $includeClasses {
-    .#{$nameSpace}-overline-from-left {
-      @include overline-from-left();
-    }
-  }
+	@if $includeClasses {
+		.#{$nameSpace}-overline-from-left {
+			@include overline-from-left();
+		}
+	}
 }
 
-@import 'effects/border-transitions/overline-from-center';
+@import "effects/border-transitions/overline-from-center";
 @mixin hover2-border-transitions-overline-from-center() {
-  @if $includeClasses {
-    .#{$nameSpace}-overline-from-center {
-      @include overline-from-center();
-    }
-  }
+	@if $includeClasses {
+		.#{$nameSpace}-overline-from-center {
+			@include overline-from-center();
+		}
+	}
 }
 
-@import 'effects/border-transitions/overline-from-right';
+@import "effects/border-transitions/overline-from-right";
 @mixin hover2-border-transitions-overline-from-right() {
-  @if $includeClasses {
-    .#{$nameSpace}-overline-from-right {
-      @include overline-from-right();
-    }
-  }
+	@if $includeClasses {
+		.#{$nameSpace}-overline-from-right {
+			@include overline-from-right();
+		}
+	}
 }
 
-@import 'effects/border-transitions/reveal';
+@import "effects/border-transitions/reveal";
 @mixin hover2-border-transitions-reveal() {
-  @if $includeClasses {
-    .#{$nameSpace}-reveal {
-      @include reveal();
-    }
-  }
+	@if $includeClasses {
+		.#{$nameSpace}-reveal {
+			@include reveal();
+		}
+	}
 }
 
-@import 'effects/border-transitions/underline-reveal';
+@import "effects/border-transitions/underline-reveal";
 @mixin hover2-border-transitions-underline-reveal() {
-  @if $includeClasses {
-    .#{$nameSpace}-underline-reveal {
-      @include underline-reveal();
-    }
-  }
+	@if $includeClasses {
+		.#{$nameSpace}-underline-reveal {
+			@include underline-reveal();
+		}
+	}
 }
 
-@import 'effects/border-transitions/overline-reveal';
+@import "effects/border-transitions/overline-reveal";
 @mixin hover2-border-transitions-overline-reveal() {
-  @if $includeClasses {
-    .#{$nameSpace}-overline-reveal {
-      @include overline-reveal();
-    }
-  }
+	@if $includeClasses {
+		.#{$nameSpace}-overline-reveal {
+			@include overline-reveal();
+		}
+	}
 }
 
-@import 'effects/shadow-and-glow-transitions/glow';
+@import "effects/shadow-and-glow-transitions/glow";
 @mixin hover2-shadow-and-glow-transitions-glow() {
-  @if $includeClasses {
-    .#{$nameSpace}-glow {
-      @include glow();
-    }
-  }
+	@if $includeClasses {
+		.#{$nameSpace}-glow {
+			@include glow();
+		}
+	}
 }
 
-@import 'effects/shadow-and-glow-transitions/shadow';
+@import "effects/shadow-and-glow-transitions/shadow";
 @mixin hover2-shadow-and-glow-transitions-shadow() {
-  @if $includeClasses {
-    .#{$nameSpace}-shadow {
-      @include shadow();
-    }
-  }
+	@if $includeClasses {
+		.#{$nameSpace}-shadow {
+			@include shadow();
+		}
+	}
 }
 
-@import 'effects/shadow-and-glow-transitions/grow-shadow';
+@import "effects/shadow-and-glow-transitions/grow-shadow";
 @mixin hover2-shadow-and-glow-transitions-grow-shadow() {
-  @if $includeClasses {
-    .#{$nameSpace}-grow-shadow {
-      @include grow-shadow();
-    }
-  }
+	@if $includeClasses {
+		.#{$nameSpace}-grow-shadow {
+			@include grow-shadow();
+		}
+	}
 }
 
-@import 'effects/shadow-and-glow-transitions/box-shadow-outset';
+@import "effects/shadow-and-glow-transitions/box-shadow-outset";
 @mixin hover2-shadow-and-glow-transitions-box-shadow-outset() {
-  @if $includeClasses {
-    .#{$nameSpace}-box-shadow-outset {
-      @include box-shadow-outset();
-    }
-  }
+	@if $includeClasses {
+		.#{$nameSpace}-box-shadow-outset {
+			@include box-shadow-outset();
+		}
+	}
 }
 
-@import 'effects/shadow-and-glow-transitions/box-shadow-inset';
+@import "effects/shadow-and-glow-transitions/box-shadow-inset";
 @mixin hover2-shadow-and-glow-transitions-box-shadow-inset() {
-  @if $includeClasses {
-    .#{$nameSpace}-box-shadow-inset {
-      @include box-shadow-inset();
-    }
-  }
+	@if $includeClasses {
+		.#{$nameSpace}-box-shadow-inset {
+			@include box-shadow-inset();
+		}
+	}
 }
 
-@import 'effects/shadow-and-glow-transitions/float-shadow';
+@import "effects/shadow-and-glow-transitions/float-shadow";
 @mixin hover2-shadow-and-glow-transitions-float-shadow() {
-  @if $includeClasses {
-    .#{$nameSpace}-float-shadow {
-      @include float-shadow();
-    }
-  }
+	@if $includeClasses {
+		.#{$nameSpace}-float-shadow {
+			@include float-shadow();
+		}
+	}
 }
 
-@import 'effects/shadow-and-glow-transitions/shadow-radial';
+@import "effects/shadow-and-glow-transitions/shadow-radial";
 @mixin hover2-shadow-and-glow-transitions-shadow-radial() {
-  @if $includeClasses {
-    .#{$nameSpace}-shadow-radial {
-      @include shadow-radial();
-    }
-  }
+	@if $includeClasses {
+		.#{$nameSpace}-shadow-radial {
+			@include shadow-radial();
+		}
+	}
 }
 
-@import 'effects/speech-bubbles/bubble-top';
+@import "effects/speech-bubbles/bubble-top";
 @mixin hover2-speech-bubbles-bubble-top() {
-  @if $includeClasses {
-    .#{$nameSpace}-bubble-top {
-      @include bubble-top();
-    }
-  }
+	@if $includeClasses {
+		.#{$nameSpace}-bubble-top {
+			@include bubble-top();
+		}
+	}
 }
 
-@import 'effects/speech-bubbles/bubble-right';
+@import "effects/speech-bubbles/bubble-right";
 @mixin hover2-speech-bubbles-bubble-right() {
-  @if $includeClasses {
-    .#{$nameSpace}-bubble-right {
-      @include bubble-right();
-    }
-  }
+	@if $includeClasses {
+		.#{$nameSpace}-bubble-right {
+			@include bubble-right();
+		}
+	}
 }
 
-@import 'effects/speech-bubbles/bubble-bottom';
+@import "effects/speech-bubbles/bubble-bottom";
 @mixin hover2-speech-bubbles-bubble-bottom() {
-  @if $includeClasses {
-    .#{$nameSpace}-bubble-bottom {
-      @include bubble-bottom();
-    }
-  }
+	@if $includeClasses {
+		.#{$nameSpace}-bubble-bottom {
+			@include bubble-bottom();
+		}
+	}
 }
 
-@import 'effects/speech-bubbles/bubble-left';
+@import "effects/speech-bubbles/bubble-left";
 @mixin hover2-speech-bubbles-bubble-left() {
-  @if $includeClasses {
-    .#{$nameSpace}-bubble-left {
-      @include bubble-left();
-    }
-  }
+	@if $includeClasses {
+		.#{$nameSpace}-bubble-left {
+			@include bubble-left();
+		}
+	}
 }
 
-@import 'effects/speech-bubbles/bubble-float-top';
+@import "effects/speech-bubbles/bubble-float-top";
 @mixin hover2-speech-bubbles-bubble-float-top() {
-  @if $includeClasses {
-    .#{$nameSpace}-bubble-float-top {
-      @include bubble-float-top();
-    }
-  }
+	@if $includeClasses {
+		.#{$nameSpace}-bubble-float-top {
+			@include bubble-float-top();
+		}
+	}
 }
 
-@import 'effects/speech-bubbles/bubble-float-right';
+@import "effects/speech-bubbles/bubble-float-right";
 @mixin hover2-speech-bubbles-bubble-float-right() {
-  @if $includeClasses {
-    .#{$nameSpace}-bubble-float-right {
-      @include bubble-float-right();
-    }
-  }
+	@if $includeClasses {
+		.#{$nameSpace}-bubble-float-right {
+			@include bubble-float-right();
+		}
+	}
 }
 
-@import 'effects/speech-bubbles/bubble-float-bottom';
+@import "effects/speech-bubbles/bubble-float-bottom";
 @mixin hover2-speech-bubbles-bubble-float-bottom() {
-  @if $includeClasses {
-    .#{$nameSpace}-bubble-float-bottom {
-      @include bubble-float-bottom();
-    }
-  }
+	@if $includeClasses {
+		.#{$nameSpace}-bubble-float-bottom {
+			@include bubble-float-bottom();
+		}
+	}
 }
 
-@import 'effects/speech-bubbles/bubble-float-left';
+@import "effects/speech-bubbles/bubble-float-left";
 @mixin hover2-speech-bubbles-bubble-float-left() {
-  @if $includeClasses {
-    .#{$nameSpace}-bubble-float-left {
-      @include bubble-float-left();
-    }
-  }
+	@if $includeClasses {
+		.#{$nameSpace}-bubble-float-left {
+			@include bubble-float-left();
+		}
+	}
 }
 
-@import 'effects/icons/icon-back';
+@import "effects/icons/icon-back";
 @mixin hover2-icons-icon-back() {
-  @if $includeClasses {
-    .#{$nameSpace}-icon-back {
-      @include icon-back();
-    }
-  }
+	@if $includeClasses {
+		.#{$nameSpace}-icon-back {
+			@include icon-back();
+		}
+	}
 }
 
-@import 'effects/icons/icon-forward';
+@import "effects/icons/icon-forward";
 @mixin hover2-icons-icon-forward() {
-  @if $includeClasses {
-    .#{$nameSpace}-icon-forward {
-      @include icon-forward();
-    }
-  }
+	@if $includeClasses {
+		.#{$nameSpace}-icon-forward {
+			@include icon-forward();
+		}
+	}
 }
 
-@import 'effects/icons/icon-down';
+@import "effects/icons/icon-down";
 @mixin hover2-icons-icon-down() {
-  @if $includeClasses {
-    .#{$nameSpace}-icon-down {
-      @include icon-down();
-    }
-  }
+	@if $includeClasses {
+		.#{$nameSpace}-icon-down {
+			@include icon-down();
+		}
+	}
 }
 
-@import 'effects/icons/icon-up';
+@import "effects/icons/icon-up";
 @mixin hover2-icons-icon-up() {
-  @if $includeClasses {
-    .#{$nameSpace}-icon-up {
-      @include icon-up();
-    }
-  }
+	@if $includeClasses {
+		.#{$nameSpace}-icon-up {
+			@include icon-up();
+		}
+	}
 }
 
-@import 'effects/icons/icon-spin';
+@import "effects/icons/icon-spin";
 @mixin hover2-icons-icon-spin() {
-  @if $includeClasses {
-    .#{$nameSpace}-icon-spin {
-      @include icon-spin();
-    }
-  }
+	@if $includeClasses {
+		.#{$nameSpace}-icon-spin {
+			@include icon-spin();
+		}
+	}
 }
 
-@import 'effects/icons/icon-drop';
+@import "effects/icons/icon-drop";
 @mixin hover2-icons-icon-drop() {
-  @if $includeClasses {
-    .#{$nameSpace}-icon-drop {
-      @include icon-drop();
-    }
-  }
+	@if $includeClasses {
+		.#{$nameSpace}-icon-drop {
+			@include icon-drop();
+		}
+	}
 }
 
-@import 'effects/icons/icon-fade';
+@import "effects/icons/icon-fade";
 @mixin hover2-icons-icon-fade() {
-  @if $includeClasses {
-    .#{$nameSpace}-icon-fade {
-      @include icon-fade();
-    }
-  }
+	@if $includeClasses {
+		.#{$nameSpace}-icon-fade {
+			@include icon-fade();
+		}
+	}
 }
 
-@import 'effects/icons/icon-float-away';
+@import "effects/icons/icon-float-away";
 @mixin hover2-icons-icon-float-away() {
-  @if $includeClasses {
-    .#{$nameSpace}-icon-float-away {
-      @include icon-float-away();
-    }
-  }
+	@if $includeClasses {
+		.#{$nameSpace}-icon-float-away {
+			@include icon-float-away();
+		}
+	}
 }
 
-@import 'effects/icons/icon-sink-away';
+@import "effects/icons/icon-sink-away";
 @mixin hover2-icons-icon-sink-away() {
-  @if $includeClasses {
-    .#{$nameSpace}-icon-sink-away {
-      @include icon-sink-away();
-    }
-  }
+	@if $includeClasses {
+		.#{$nameSpace}-icon-sink-away {
+			@include icon-sink-away();
+		}
+	}
 }
 
-@import 'effects/icons/icon-grow';
+@import "effects/icons/icon-grow";
 @mixin hover2-icons-icon-grow() {
-  @if $includeClasses {
-    .#{$nameSpace}-icon-grow {
-      @include icon-grow();
-    }
-  }
+	@if $includeClasses {
+		.#{$nameSpace}-icon-grow {
+			@include icon-grow();
+		}
+	}
 }
 
-@import 'effects/icons/icon-shrink';
+@import "effects/icons/icon-shrink";
 @mixin hover2-icons-icon-shrink() {
-  @if $includeClasses {
-    .#{$nameSpace}-icon-shrink {
-      @include icon-shrink();
-    }
-  }
+	@if $includeClasses {
+		.#{$nameSpace}-icon-shrink {
+			@include icon-shrink();
+		}
+	}
 }
 
-@import 'effects/icons/icon-pulse';
+@import "effects/icons/icon-pulse";
 @mixin hover2-icons-icon-pulse() {
-  @if $includeClasses {
-    .#{$nameSpace}-icon-pulse {
-      @include icon-pulse();
-    }
-  }
+	@if $includeClasses {
+		.#{$nameSpace}-icon-pulse {
+			@include icon-pulse();
+		}
+	}
 }
 
-@import 'effects/icons/icon-pulse-grow';
+@import "effects/icons/icon-pulse-grow";
 @mixin hover2-icons-icon-pulse-grow() {
-  @if $includeClasses {
-    .#{$nameSpace}-icon-pulse-grow {
-      @include icon-pulse-grow();
-    }
-  }
+	@if $includeClasses {
+		.#{$nameSpace}-icon-pulse-grow {
+			@include icon-pulse-grow();
+		}
+	}
 }
 
-@import 'effects/icons/icon-pulse-shrink';
+@import "effects/icons/icon-pulse-shrink";
 @mixin hover2-icon-pulse-shrink() {
-  @if $includeClasses {
-    .#{$nameSpace}-icon-pulse-shrink {
-      @include icon-pulse-shrink();
-    }
-  }
+	@if $includeClasses {
+		.#{$nameSpace}-icon-pulse-shrink {
+			@include icon-pulse-shrink();
+		}
+	}
 }
 
-@import 'effects/icons/icon-push';
+@import "effects/icons/icon-push";
 @mixin hover2-icon-push() {
-  @if $includeClasses {
-    .#{$nameSpace}-icon-push {
-      @include icon-push();
-    }
-  }
+	@if $includeClasses {
+		.#{$nameSpace}-icon-push {
+			@include icon-push();
+		}
+	}
 }
 
-@import 'effects/icons/icon-pop';
+@import "effects/icons/icon-pop";
 @mixin hover2-icon-pop() {
-  @if $includeClasses {
-    .#{$nameSpace}-icon-pop {
-      @include icon-pop();
-    }
-  }
+	@if $includeClasses {
+		.#{$nameSpace}-icon-pop {
+			@include icon-pop();
+		}
+	}
 }
 
-@import 'effects/icons/icon-bounce';
+@import "effects/icons/icon-bounce";
 @mixin hover2-icon-bounce() {
-  @if $includeClasses {
-    .#{$nameSpace}-icon-bounce {
-      @include icon-bounce();
-    }
-  }
+	@if $includeClasses {
+		.#{$nameSpace}-icon-bounce {
+			@include icon-bounce();
+		}
+	}
 }
 
-@import 'effects/icons/icon-rotate';
+@import "effects/icons/icon-rotate";
 @mixin hover2-icon-rotate() {
-  @if $includeClasses {
-    .#{$nameSpace}-icon-rotate {
-      @include icon-rotate();
-    }
-  }
+	@if $includeClasses {
+		.#{$nameSpace}-icon-rotate {
+			@include icon-rotate();
+		}
+	}
 }
 
-@import 'effects/icons/icon-grow-rotate';
+@import "effects/icons/icon-grow-rotate";
 @mixin hover2-icon-grow-rotate() {
-  @if $includeClasses {
-    .#{$nameSpace}-icon-grow-rotate {
-      @include icon-grow-rotate();
-    }
-  }
+	@if $includeClasses {
+		.#{$nameSpace}-icon-grow-rotate {
+			@include icon-grow-rotate();
+		}
+	}
 }
 
-@import 'effects/icons/icon-float';
+@import "effects/icons/icon-float";
 @mixin hover2-icon-float() {
-  @if $includeClasses {
-    .#{$nameSpace}-icon-float {
-      @include icon-float();
-    }
-  }
+	@if $includeClasses {
+		.#{$nameSpace}-icon-float {
+			@include icon-float();
+		}
+	}
 }
 
-@import 'effects/icons/icon-sink';
+@import "effects/icons/icon-sink";
 @mixin hover2-icon-sink() {
-  @if $includeClasses {
-    .#{$nameSpace}-icon-sink {
-      @include icon-sink();
-    }
-  }
+	@if $includeClasses {
+		.#{$nameSpace}-icon-sink {
+			@include icon-sink();
+		}
+	}
 }
 
-@import 'effects/icons/icon-bob';
+@import "effects/icons/icon-bob";
 @mixin hover2-icon-bob() {
-  @if $includeClasses {
-    .#{$nameSpace}-icon-bob {
-      @include icon-bob();
-    }
-  }
+	@if $includeClasses {
+		.#{$nameSpace}-icon-bob {
+			@include icon-bob();
+		}
+	}
 }
 
-@import 'effects/icons/icon-hang';
+@import "effects/icons/icon-hang";
 @mixin hover2-icon-hang() {
-  @if $includeClasses {
-    .#{$nameSpace}-icon-hang {
-      @include icon-hang();
-    }
-  }
+	@if $includeClasses {
+		.#{$nameSpace}-icon-hang {
+			@include icon-hang();
+		}
+	}
 }
 
-@import 'effects/icons/icon-wobble-horizontal';
+@import "effects/icons/icon-wobble-horizontal";
 @mixin hover2-icon-wobble-horizontal() {
-  @if $includeClasses {
-    .#{$nameSpace}-icon-wobble-horizontal {
-      @include icon-wobble-horizontal();
-    }
-  }
+	@if $includeClasses {
+		.#{$nameSpace}-icon-wobble-horizontal {
+			@include icon-wobble-horizontal();
+		}
+	}
 }
 
-@import 'effects/icons/icon-wobble-vertical';
+@import "effects/icons/icon-wobble-vertical";
 @mixin hover2-icon-wobble-vertical() {
-  @if $includeClasses {
-    .#{$nameSpace}-icon-wobble-vertical {
-      @include icon-wobble-vertical();
-    }
-  }
+	@if $includeClasses {
+		.#{$nameSpace}-icon-wobble-vertical {
+			@include icon-wobble-vertical();
+		}
+	}
 }
 
-@import 'effects/icons/icon-buzz';
+@import "effects/icons/icon-buzz";
 @mixin hover2-icon-buzz() {
-  @if $includeClasses {
-    .#{$nameSpace}-icon-buzz {
-      @include icon-buzz();
-    }
-  }
+	@if $includeClasses {
+		.#{$nameSpace}-icon-buzz {
+			@include icon-buzz();
+		}
+	}
 }
 
-@import 'effects/icons/icon-buzz-out';
+@import "effects/icons/icon-buzz-out";
 @mixin hover2-icon-buzz-out() {
-  @if $includeClasses {
-    .#{$nameSpace}-icon-buzz-out {
-      @include icon-buzz-out();
-    }
-  }
+	@if $includeClasses {
+		.#{$nameSpace}-icon-buzz-out {
+			@include icon-buzz-out();
+		}
+	}
 }
 
-@import 'effects/curls/curl-top-left';
+@import "effects/curls/curl-top-left";
 @mixin hover2-curl-top-left() {
-  @if $includeClasses {
-    .#{$nameSpace}-curl-top-left {
-      @include curl-top-left();
-    }
-  }
+	@if $includeClasses {
+		.#{$nameSpace}-curl-top-left {
+			@include curl-top-left();
+		}
+	}
 }
 
-@import 'effects/curls/curl-top-right';
+@import "effects/curls/curl-top-right";
 @mixin hover2-curl-top-right() {
-  @if $includeClasses {
-    .#{$nameSpace}-curl-top-right {
-      @include curl-top-right();
-    }
-  }
+	@if $includeClasses {
+		.#{$nameSpace}-curl-top-right {
+			@include curl-top-right();
+		}
+	}
 }
 
-@import 'effects/curls/curl-bottom-right';
+@import "effects/curls/curl-bottom-right";
 @mixin hover2-curl-bottom-right() {
-  @if $includeClasses {
-    .#{$nameSpace}-curl-bottom-right {
-      @include curl-bottom-right();
-    }
-  }
+	@if $includeClasses {
+		.#{$nameSpace}-curl-bottom-right {
+			@include curl-bottom-right();
+		}
+	}
 }
 
-@import 'effects/curls/curl-bottom-left';
+@import "effects/curls/curl-bottom-left";
 @mixin hover2-curl-bottom-left() {
-  @if $includeClasses {
-    .#{$nameSpace}-curl-bottom-left {
-      @include curl-bottom-left();
-    }
-  }
+	@if $includeClasses {
+		.#{$nameSpace}-curl-bottom-left {
+			@include curl-bottom-left();
+		}
+	}
 }

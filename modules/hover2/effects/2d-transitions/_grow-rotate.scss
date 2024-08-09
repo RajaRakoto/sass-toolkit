@@ -1,13 +1,13 @@
 @charset "UTF-8";
 
 @mixin grow-rotate {
-  @include hacks();
-  @include prefixed(transition-duration, $mediumDuration);
-  @include prefixed(transition-property, transform);
+	@include hacks();
+	@include prefixed(transition-duration, $mediumDuration);
+	@include prefixed(transition-property, transform);
 
-  &:hover,
-  &:focus,
-  &:active {
-    @include prefixed(transform, scale(1.1) rotate(4deg));
-  }
+	&:hover,
+	&:focus,
+	&:active {
+		@include prefixed(transform, scale(1.1) rotate(4deg));
+	}
 }

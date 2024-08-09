@@ -1,48 +1,48 @@
 @charset "UTF-8";
 
 @mixin magic-openUpRightReturn($duration, $delay) {
-  -webkit-animation-name: openUpRightReturn;
-  animation-name: openUpRightReturn;
-  animation-duration: $duration;
-  animation-delay: $delay;
-  animation-fill-mode: both;
+	-webkit-animation-name: openUpRightReturn;
+	animation-name: openUpRightReturn;
+	animation-duration: $duration;
+	animation-delay: $delay;
+	animation-fill-mode: both;
 
-  @-webkit-keyframes openUpRightReturn {
-    0% {
-      -webkit-transform-origin: top right;
-      transform-origin: top right;
-      -webkit-transform: rotate(-110deg);
-      transform: rotate(-110deg);
-      -webkit-animation-timing-function: ease-in-out;
-      animation-timing-function: ease-in-out;
-    }
+	@-webkit-keyframes openUpRightReturn {
+		0% {
+			-webkit-transform-origin: top right;
+			transform-origin: top right;
+			-webkit-transform: rotate(-110deg);
+			transform: rotate(-110deg);
+			-webkit-animation-timing-function: ease-in-out;
+			animation-timing-function: ease-in-out;
+		}
 
-    100% {
-      -webkit-transform-origin: top right;
-      transform-origin: top right;
-      -webkit-transform: rotate(0deg);
-      transform: rotate(0deg);
-      -webkit-animation-timing-function: ease-out;
-      animation-timing-function: ease-out;
-    }
-  }
-  @keyframes openUpRightReturn {
-    0% {
-      -webkit-transform-origin: top right;
-      transform-origin: top right;
-      -webkit-transform: rotate(-110deg);
-      transform: rotate(-110deg);
-      -webkit-animation-timing-function: ease-in-out;
-      animation-timing-function: ease-in-out;
-    }
+		100% {
+			-webkit-transform-origin: top right;
+			transform-origin: top right;
+			-webkit-transform: rotate(0deg);
+			transform: rotate(0deg);
+			-webkit-animation-timing-function: ease-out;
+			animation-timing-function: ease-out;
+		}
+	}
+	@keyframes openUpRightReturn {
+		0% {
+			-webkit-transform-origin: top right;
+			transform-origin: top right;
+			-webkit-transform: rotate(-110deg);
+			transform: rotate(-110deg);
+			-webkit-animation-timing-function: ease-in-out;
+			animation-timing-function: ease-in-out;
+		}
 
-    100% {
-      -webkit-transform-origin: top right;
-      transform-origin: top right;
-      -webkit-transform: rotate(0deg);
-      transform: rotate(0deg);
-      -webkit-animation-timing-function: ease-out;
-      animation-timing-function: ease-out;
-    }
-  }
+		100% {
+			-webkit-transform-origin: top right;
+			transform-origin: top right;
+			-webkit-transform: rotate(0deg);
+			transform: rotate(0deg);
+			-webkit-animation-timing-function: ease-out;
+			animation-timing-function: ease-out;
+		}
+	}
 }

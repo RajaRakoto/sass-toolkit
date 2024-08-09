@@ -1,13 +1,13 @@
 @charset "UTF-8";
 
 @mixin round-corners {
-  @include hacks();
-  @include prefixed(transition-duration, $mediumDuration);
-  @include prefixed(transition-property, border-radius);
+	@include hacks();
+	@include prefixed(transition-duration, $mediumDuration);
+	@include prefixed(transition-property, border-radius);
 
-  &:hover,
-  &:focus,
-  &:active {
-    border-radius: 1em;
-  }
+	&:hover,
+	&:focus,
+	&:active {
+		border-radius: 1em;
+	}
 }

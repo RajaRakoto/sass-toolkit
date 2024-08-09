@@ -47,143 +47,143 @@ Plum's main attributes are consolidated through a mix of diverse mixins and usef
 **Here are some simple examples of different ways to use Plum (you can refer to all use cases in the plum-cli documentation):**
 
 ```scss
-@import '@raja-rakoto/plum/plum';
+@import "@raja-rakoto/plum/plum";
 
 @include minireset();
 @include normalize();
 @include antialias();
 @include typo-fontface(
-  'Quicksand-regular',
-  './src/assets/fonts/Quicksand-regular.ttf'
+	"Quicksand-regular",
+	"./src/assets/fonts/Quicksand-regular.ttf"
 );
 
 .box {
-  width: __convertToRem(100px);
-  height: __convertToEm(150px);
-  color: __color-pastel(blue);
+	width: __convertToRem(100px);
+	height: __convertToEm(150px);
+	color: __color-pastel(blue);
 }
 
 .zoom-in {
-  @include animation-zoom($in-out: in);
+	@include animation-zoom($in-out: in);
 }
 
 .box-debug {
-  @include box-debugging(
-    $colors: red,
-    $size: 3px,
-    $bg-color: false,
-    $status: true
-  );
+	@include box-debugging(
+		$colors: red,
+		$size: 3px,
+		$bg-color: false,
+		$status: true
+	);
 }
 
 .opacity-50 {
-  @include effect-opacity($percent: 50%);
+	@include effect-opacity($percent: 50%);
 }
 
 img {
-  @include image-responsive($height: auto);
+	@include image-responsive($height: auto);
 }
 
 .video-element {
-  @include video-responsive('4/3');
+	@include video-responsive("4/3");
 }
 
 @include input-all(hover) {
-  background-color: orangered;
+	background-color: orangered;
 }
 
 @include button-all {
-  background-color: teal;
-  color: white;
+	background-color: teal;
+	color: white;
 }
 
 .containing-element {
-  @include position-set(sticky, null 30px null 30px);
+	@include position-set(sticky, null 30px null 30px);
 }
 
 .containing-element {
-  @include spacing-padding-size(small);
+	@include spacing-padding-size(small);
 }
 
 .parent-element {
-  @include clearfix;
+	@include clearfix;
 }
 
 .parent-element {
-  @include columnize(4);
-  .item {
-    background-color: silver;
-  }
+	@include columnize(4);
+	.item {
+		background-color: silver;
+	}
 }
 
 .element {
-  @include flex-box();
+	@include flex-box();
 }
 
 .element {
-  @include flex-wrap(wrap-reverse);
+	@include flex-wrap(wrap-reverse);
 }
 
 .containing-element {
-  @include breakpoint(only, 1200px) {
-    background-color: teal;
-  }
+	@include breakpoint(only, 1200px) {
+		background-color: teal;
+	}
 }
 
 .main-container {
-  @include adaptive();
+	@include adaptive();
 }
 
 .wrapper {
-  .item {
-    @include except(first) {
-      background-color: dodgerblue;
-      color: #eee;
-    }
-  }
+	.item {
+		@include except(first) {
+			background-color: dodgerblue;
+			color: #eee;
+		}
+	}
 }
 
 .wrapper {
-  .item {
-    @include only(last) {
-      background-color: dodgerblue;
-      color: #eee;
-    }
-  }
+	.item {
+		@include only(last) {
+			background-color: dodgerblue;
+			color: #eee;
+		}
+	}
 }
 
 .wrapper {
-  @include overflow-wrap();
+	@include overflow-wrap();
 }
 
 @include loadify(init);
 
 img {
-  @include loadify(0.5s); // note: you must initialize the loadify before
+	@include loadify(0.5s); // note: you must initialize the loadify before
 }
 
 .containing-element {
-  @include mobile(iPhoneX) {
-    background-color: teal;
-  }
+	@include mobile(iPhoneX) {
+		background-color: teal;
+	}
 }
 
 .containing-element {
-  @include tablet(iPadPro) {
-    background-color: teal;
-  }
+	@include tablet(iPadPro) {
+		background-color: teal;
+	}
 }
 
 .containing-element {
-  @include resizable();
+	@include resizable();
 }
 
 .containing-element {
-  @include sizer(400px);
+	@include sizer(400px);
 }
 
 .element {
-  @include trbl(55px, null, null, 15px);
+	@include trbl(55px, null, null, 15px);
 }
 ```
 
@@ -229,57 +229,57 @@ Here are the lists of third-party modules, applications, and scripts that you ca
 **`Animate`** (module + app): A collection of CSS animations to make your website more attractive !
 
 ```scss
-@import '@raja-rakoto/plum/modules/animate';
+@import "@raja-rakoto/plum/modules/animate";
 .bounce-in-left {
-  @include animate-bounceInLeft($duration: second, $delay: second);
+	@include animate-bounceInLeft($duration: second, $delay: second);
 }
 ```
 
 **`Magic`** (module + app): Magic CSS are a set of simple animations to include in your web or app project's.
 
 ```scss
-@import '@raja-rakoto/plum/modules/magic';
+@import "@raja-rakoto/plum/modules/magic";
 .open-up-left {
-  @include magic-openUpLeft($duration: second, $delay: second);
+	@include magic-openUpLeft($duration: second, $delay: second);
 }
 ```
 
 **`Buttons2`** (module + app + script): A highly customizable production ready mobile web and desktop css button library.
 
 ```scss
-@import '@raja-rakoto/plum/modules/buttons2';
+@import "@raja-rakoto/plum/modules/buttons2";
 @include buttons2-borderless();
 ```
 
 **`Hover2`** (module + app): A collection of CSS3 powered hover effects to be applied to links, buttons, logos, SVG, featured images and so on. Easily apply to your own elements, modify or just use for inspiration.
 
 ```scss
-@import '@raja-rakoto/plum/modules/hover2';
+@import "@raja-rakoto/plum/modules/hover2";
 @include hover2-2d-transitions-shrink();
 ```
 
 **`Open color | oc-scheme`** (module + app): Open-source color scheme optimized for UI like font, background, border and more ...
 
 ```scss
-@import '@raja-rakoto/plum/modules/open-color';
+@import "@raja-rakoto/plum/modules/open-color";
 h1 {
-  color: $oc-green-5;
+	color: $oc-green-5;
 }
 ```
 
 **`Fontawesome`** (module): The web's most popular icon set and toolkit.
 
 ```scss
-@import '@raja-rakoto/plum/modules/fontawesome-free';
+@import "@raja-rakoto/plum/modules/fontawesome-free";
 ```
 
 **`Bootstrap`** (module + script): **Plum** integrates the sass source code of Bootstrap 5 in order to partially use its functionalities. You have 4 choices:
 
 ```scss
-@import '@raja-rakoto/plum/modules/bootstrap';
-@import '@raja-rakoto/plum/modules/bootstrap-grid';
-@import '@raja-rakoto/plum/modules/bootstrap-reboot';
-@import '@raja-rakoto/plum/modules/bootstrap-utilities';
+@import "@raja-rakoto/plum/modules/bootstrap";
+@import "@raja-rakoto/plum/modules/bootstrap-grid";
+@import "@raja-rakoto/plum/modules/bootstrap-reboot";
+@import "@raja-rakoto/plum/modules/bootstrap-utilities";
 ```
 
 **`Flex`** (app): Generate flexbox CSS code to make dynamic layouts !
