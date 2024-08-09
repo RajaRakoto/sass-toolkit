@@ -6,7 +6,7 @@ const fs = require("node:fs");
 const path = require("node:path");
 
 // source directory
-const directoryPath = "../modules/hover2/effects";
+const directoryPath = "../../../modules/hover2/effects";
 
 function removeFirstLine(filePath) {
 	const data = fs.readFileSync(filePath, "utf8");

@@ -45,7 +45,7 @@ function processSCSSFile(filePath) {
 
 // entry point
 function startCharset() {
-	const projectRoot = path.join(__dirname, "..");
+	const projectRoot = path.join(__dirname, "../../../");
 	traverseDirectory(projectRoot);
 }
 
