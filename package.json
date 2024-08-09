@@ -5,12 +5,16 @@
   "author": "Raja Rakotonirina <raja.rakoto7@gmail.com>",
   "license": "MIT",
   "type": "module",
+  "module": "index.ts",
+	"main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/RajaRakoto/plum.git"
   },
   "homepage": "https://github.com/RajaRakoto/plum#readme",
   "bugs": "https://github.com/RajaRakoto/plum/issues",
+  "files": ["dist"],
   "keywords": [
     "plum",
     "css",
@@ -21,10 +25,13 @@
     "scss",
     "styles"
   ],
+  "engines": {
+		"bun": ">= 1.0.26"
+	},
   "scripts": {
     "start": "bun dist/index.js",
 		"start:smol": "bun --smol dist/index.js",
-		"start:bin": "./dist/bun-boilerplate",
+		"start:bin": "./dist/plum",
 		"clean": "rimraf build dist coverage",
 		"dev": "bun run src/index.ts",
 		"dev:watch": "bun --watch run src/index.ts",
@@ -33,7 +40,7 @@
 		"dev:smol:hot": "bun --smol --hot run src/index.ts",
 		"build": "bun run clean && bun run build.js",
 		"build:watch": "bun build src/index.ts --outdir dist --watch",
-		"build:bin": "bun build --compile --minify --sourcemap src/index.ts --outfile dist/bun-boilerplate",
+		"build:bin": "bun build --compile --minify --sourcemap src/index.ts --outfile dist/plum",
     "test": "grunt test",
     "test:unit": "bun test",
 		"test:unit:watch": "bun test --watch",
