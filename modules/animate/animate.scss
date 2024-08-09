@@ -11,15 +11,15 @@
 //-----------------------------------------------------------------------
 
 // Always required
-@import 'properties';
+@import "properties";
 
 // Import the animations
-@import 'attention-seekers/attention-seekers.scss',
-  'bouncing-entrances/bouncing-entrances.scss',
-  'bouncing-exits/bouncing-exits.scss', 'fading-entrances/fading-entrances.scss',
-  'fading-exits/fading-exits.scss', 'flippers/flippers.scss',
-  'lightspeed/lightspeed.scss', 'rotating-entrances/rotating-entrances.scss',
-  'rotating-exits/rotating-exits.scss',
-  'sliding-entrances/sliding-entrances.scss', 'sliding-exits/sliding-exits.scss',
-  'specials/specials.scss', 'zooming-entrances/zooming-entrances.scss',
-  'zooming-exits/zooming-exits.scss';
+@import "attention-seekers/attention-seekers.scss",
+	"bouncing-entrances/bouncing-entrances.scss",
+	"bouncing-exits/bouncing-exits.scss", "fading-entrances/fading-entrances.scss",
+	"fading-exits/fading-exits.scss", "flippers/flippers.scss",
+	"lightspeed/lightspeed.scss", "rotating-entrances/rotating-entrances.scss",
+	"rotating-exits/rotating-exits.scss",
+	"sliding-entrances/sliding-entrances.scss", "sliding-exits/sliding-exits.scss",
+	"specials/specials.scss", "zooming-entrances/zooming-entrances.scss",
+	"zooming-exits/zooming-exits.scss";

@@ -1,31 +1,31 @@
 @charset "UTF-8";
 
 @mixin icon-sink-away {
-  @include keyframes(#{$nameSpace}-icon-sink-away) {
-    0% {
-      opacity: 1;
-    }
+	@include keyframes(#{$nameSpace}-icon-sink-away) {
+		0% {
+			opacity: 1;
+		}
 
-    100% {
-      opacity: 0;
-      @include prefixed(transform, translateY(1em));
-    }
-  }
+		100% {
+			opacity: 0;
+			@include prefixed(transform, translateY(1em));
+		}
+	}
 
-  @include hacks();
+	@include hacks();
 
-  .hvr-icon {
-    @include prefixed(transform, translateZ(0));
-    @include prefixed(animation-duration, #{$slowDuration});
-    @include prefixed(animation-fill-mode, forwards);
-  }
+	.hvr-icon {
+		@include prefixed(transform, translateZ(0));
+		@include prefixed(animation-duration, #{$slowDuration});
+		@include prefixed(animation-fill-mode, forwards);
+	}
 
-  &:hover,
-  &:focus,
-  &:active {
-    .hvr-icon {
-      @include prefixed(animation-name, #{$nameSpace}-icon-sink-away);
-      @include prefixed(animation-timing-function, ease-out);
-    }
-  }
+	&:hover,
+	&:focus,
+	&:active {
+		.hvr-icon {
+			@include prefixed(animation-name, #{$nameSpace}-icon-sink-away);
+			@include prefixed(animation-timing-function, ease-out);
+		}
+	}
 }

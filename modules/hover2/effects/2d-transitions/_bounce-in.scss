@@ -1,16 +1,16 @@
 @charset "UTF-8";
 
 @mixin bounce-in {
-  @include hacks();
-  @include prefixed(transition-duration, $slowDuration);
+	@include hacks();
+	@include prefixed(transition-duration, $slowDuration);
 
-  &:hover,
-  &:focus,
-  &:active {
-    @include prefixed(transform, scale(1.2));
-    @include prefixed(
-      transition-timing-function,
-      cubic-bezier(0.47, 2.02, 0.31, -0.36)
-    );
-  }
+	&:hover,
+	&:focus,
+	&:active {
+		@include prefixed(transform, scale(1.2));
+		@include prefixed(
+			transition-timing-function,
+			cubic-bezier(0.47, 2.02, 0.31, -0.36)
+		);
+	}
 }

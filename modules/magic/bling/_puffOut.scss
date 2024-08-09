@@ -1,38 +1,38 @@
 @charset "UTF-8";
 
 @mixin magic-puffOut($duration, $delay) {
-  animation-name: puffOut;
-  animation-duration: $duration;
-  animation-delay: $delay;
-  animation-fill-mode: both;
+	animation-name: puffOut;
+	animation-duration: $duration;
+	animation-delay: $delay;
+	animation-fill-mode: both;
 
-  @-webkit-keyframes puffOut {
-    0% {
-      opacity: 1;
-      transform-origin: 50% 50%;
-      transform: scale(1, 1);
-      filter: blur(0px);
-    }
-    100% {
-      opacity: 0;
-      transform-origin: 50% 50%;
-      transform: scale(2, 2);
-      filter: blur(2px);
-    }
-  }
+	@-webkit-keyframes puffOut {
+		0% {
+			opacity: 1;
+			transform-origin: 50% 50%;
+			transform: scale(1, 1);
+			filter: blur(0px);
+		}
+		100% {
+			opacity: 0;
+			transform-origin: 50% 50%;
+			transform: scale(2, 2);
+			filter: blur(2px);
+		}
+	}
 
-  @keyframes puffOut {
-    0% {
-      opacity: 1;
-      transform-origin: 50% 50%;
-      transform: scale(1, 1);
-      filter: blur(0px);
-    }
-    100% {
-      opacity: 0;
-      transform-origin: 50% 50%;
-      transform: scale(2, 2);
-      filter: blur(2px);
-    }
-  }
+	@keyframes puffOut {
+		0% {
+			opacity: 1;
+			transform-origin: 50% 50%;
+			transform: scale(1, 1);
+			filter: blur(0px);
+		}
+		100% {
+			opacity: 0;
+			transform-origin: 50% 50%;
+			transform: scale(2, 2);
+			filter: blur(2px);
+		}
+	}
 }

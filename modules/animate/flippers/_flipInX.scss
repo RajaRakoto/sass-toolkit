@@ -1,34 +1,34 @@
 @charset "UTF-8";
 
 @mixin animate-flipInX(
-  $count: $countDefault,
-  $duration: $durationDefault,
-  $delay: $delayDefault,
-  $function: $functionDefault,
-  $fill: $fillDefault,
-  $visibility: $visibilityDefault
+	$count: $countDefault,
+	$duration: $durationDefault,
+	$delay: $delayDefault,
+	$function: $functionDefault,
+	$fill: $fillDefault,
+	$visibility: $visibilityDefault
 ) {
-  @include keyframes(animate-flipInX) {
-    0% {
-      opacity: 0;
-      @include transform(perspective(400px) rotateX(90deg));
-    }
-    40% {
-      @include transform(perspective(400px) rotateX(-10deg));
-    }
-    70% {
-      @include transform(perspective(400px) rotateX(10deg));
-    }
-    100% {
-      opacity: 1;
-      @include transform(perspective(400px) rotateX(0deg));
-    }
-  }
-  @include animation-name(animate-flipInX);
-  @include count($count);
-  @include duration($duration);
-  @include delay($delay);
-  @include function($function);
-  @include fill-mode($fill);
-  @include visibility($visibility);
+	@include keyframes(animate-flipInX) {
+		0% {
+			opacity: 0;
+			@include transform(perspective(400px) rotateX(90deg));
+		}
+		40% {
+			@include transform(perspective(400px) rotateX(-10deg));
+		}
+		70% {
+			@include transform(perspective(400px) rotateX(10deg));
+		}
+		100% {
+			opacity: 1;
+			@include transform(perspective(400px) rotateX(0deg));
+		}
+	}
+	@include animation-name(animate-flipInX);
+	@include count($count);
+	@include duration($duration);
+	@include delay($delay);
+	@include function($function);
+	@include fill-mode($fill);
+	@include visibility($visibility);
 }

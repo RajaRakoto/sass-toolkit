@@ -1,24 +1,24 @@
 @charset "UTF-8";
 
 @mixin pulse {
-  @include keyframes(#{$nameSpace}-pulse) {
-    25% {
-      @include prefixed(transform, scale(1.1));
-    }
+	@include keyframes(#{$nameSpace}-pulse) {
+		25% {
+			@include prefixed(transform, scale(1.1));
+		}
 
-    75% {
-      @include prefixed(transform, scale(0.9));
-    }
-  }
+		75% {
+			@include prefixed(transform, scale(0.9));
+		}
+	}
 
-  @include hacks();
+	@include hacks();
 
-  &:hover,
-  &:focus,
-  &:active {
-    @include prefixed(animation-name, #{$nameSpace}-pulse);
-    @include prefixed(animation-duration, 1s);
-    @include prefixed(animation-timing-function, linear);
-    @include prefixed(animation-iteration-count, infinite);
-  }
+	&:hover,
+	&:focus,
+	&:active {
+		@include prefixed(animation-name, #{$nameSpace}-pulse);
+		@include prefixed(animation-duration, 1s);
+		@include prefixed(animation-timing-function, linear);
+		@include prefixed(animation-iteration-count, infinite);
+	}
 }

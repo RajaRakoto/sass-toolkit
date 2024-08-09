@@ -24,4 +24,4 @@ If you use [sass](https://www.npmjs.com/package/sass) package for compiling your
   "watch:sass": "sass --watch style.scss:style.css --load-path=node_modules --style=compressed"
 },
 \`\`\`
-`
+`;

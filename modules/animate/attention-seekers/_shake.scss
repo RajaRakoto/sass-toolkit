@@ -1,37 +1,37 @@
 @charset "UTF-8";
 
 @mixin animate-shake(
-  $count: $countDefault,
-  $duration: $durationDefault,
-  $delay: $delayDefault,
-  $function: $functionDefault,
-  $fill: $fillDefault,
-  $visibility: $visibilityDefault
+	$count: $countDefault,
+	$duration: $durationDefault,
+	$delay: $delayDefault,
+	$function: $functionDefault,
+	$fill: $fillDefault,
+	$visibility: $visibilityDefault
 ) {
-  @include keyframes(animate-shake) {
-    0%,
-    100% {
-      @include transform(translateX(0));
-    }
-    10%,
-    30%,
-    50%,
-    70%,
-    90% {
-      @include transform(translateX(-10px));
-    }
-    20%,
-    40%,
-    60%,
-    80% {
-      @include transform(translateX(10px));
-    }
-  }
-  @include animation-name(animate-shake);
-  @include count($count);
-  @include duration($duration);
-  @include delay($delay);
-  @include function($function);
-  @include fill-mode($fill);
-  @include visibility($visibility);
+	@include keyframes(animate-shake) {
+		0%,
+		100% {
+			@include transform(translateX(0));
+		}
+		10%,
+		30%,
+		50%,
+		70%,
+		90% {
+			@include transform(translateX(-10px));
+		}
+		20%,
+		40%,
+		60%,
+		80% {
+			@include transform(translateX(10px));
+		}
+	}
+	@include animation-name(animate-shake);
+	@include count($count);
+	@include duration($duration);
+	@include delay($delay);
+	@include function($function);
+	@include fill-mode($fill);
+	@include visibility($visibility);
 }

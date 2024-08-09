@@ -1,56 +1,56 @@
 @charset "UTF-8";
 
 @mixin magic-tinLeftOut($duration, $delay) {
-  -webkit-animation-name: tinLeftOut;
-  animation-name: tinLeftOut;
-  animation-duration: $duration;
-  animation-delay: $delay;
-  animation-fill-mode: both;
+	-webkit-animation-name: tinLeftOut;
+	animation-name: tinLeftOut;
+	animation-duration: $duration;
+	animation-delay: $delay;
+	animation-fill-mode: both;
 
-  @-webkit-keyframes tinLeftOut {
-    0%,
-    20%,
-    40%,
-    50% {
-      opacity: 1;
-      -webkit-transform: scale(1, 1) translateX(0);
-      transform: scale(1, 1) translateX(0);
-    }
+	@-webkit-keyframes tinLeftOut {
+		0%,
+		20%,
+		40%,
+		50% {
+			opacity: 1;
+			-webkit-transform: scale(1, 1) translateX(0);
+			transform: scale(1, 1) translateX(0);
+		}
 
-    10%,
-    30% {
-      opacity: 1;
-      -webkit-transform: scale(1.1, 1.1) translateX(0);
-      transform: scale(1.1, 1.1) translateX(0);
-    }
+		10%,
+		30% {
+			opacity: 1;
+			-webkit-transform: scale(1.1, 1.1) translateX(0);
+			transform: scale(1.1, 1.1) translateX(0);
+		}
 
-    100% {
-      opacity: 0;
-      -webkit-transform: scale(1, 1) translateX(-900%);
-      transform: scale(1, 1) translateX(-900%);
-    }
-  }
-  @keyframes tinLeftOut {
-    0%,
-    20%,
-    40%,
-    50% {
-      opacity: 1;
-      -webkit-transform: scale(1, 1) translateX(0);
-      transform: scale(1, 1) translateX(0);
-    }
+		100% {
+			opacity: 0;
+			-webkit-transform: scale(1, 1) translateX(-900%);
+			transform: scale(1, 1) translateX(-900%);
+		}
+	}
+	@keyframes tinLeftOut {
+		0%,
+		20%,
+		40%,
+		50% {
+			opacity: 1;
+			-webkit-transform: scale(1, 1) translateX(0);
+			transform: scale(1, 1) translateX(0);
+		}
 
-    10%,
-    30% {
-      opacity: 1;
-      -webkit-transform: scale(1.1, 1.1) translateX(0);
-      transform: scale(1.1, 1.1) translateX(0);
-    }
+		10%,
+		30% {
+			opacity: 1;
+			-webkit-transform: scale(1.1, 1.1) translateX(0);
+			transform: scale(1.1, 1.1) translateX(0);
+		}
 
-    100% {
-      opacity: 0;
-      -webkit-transform: scale(1, 1) translateX(-900%);
-      transform: scale(1, 1) translateX(-900%);
-    }
-  }
+		100% {
+			opacity: 0;
+			-webkit-transform: scale(1, 1) translateX(-900%);
+			transform: scale(1, 1) translateX(-900%);
+		}
+	}
 }

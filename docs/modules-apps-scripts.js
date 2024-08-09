@@ -70,4 +70,4 @@ h1 {
 **\`Buttons\`** (app) : Generate stylish buttons in css !
 
 **\`Shadows\`** (app): Collection of shadow variants for your boxes !
-`
+`;

@@ -1,31 +1,31 @@
 @charset "UTF-8";
 
 @mixin animate-bounceOutLeft(
-  $count: $countDefault,
-  $duration: $durationDefault,
-  $delay: $delayDefault,
-  $function: $functionDefault,
-  $fill: $fillDefault,
-  $visibility: $visibilityDefault
+	$count: $countDefault,
+	$duration: $durationDefault,
+	$delay: $delayDefault,
+	$function: $functionDefault,
+	$fill: $fillDefault,
+	$visibility: $visibilityDefault
 ) {
-  @include keyframes(animate-bounceOutLeft) {
-    0% {
-      @include transform(translateX(0));
-    }
-    20% {
-      opacity: 1;
-      @include transform(translateX(20px));
-    }
-    100% {
-      opacity: 0;
-      @include transform(translateX(-2000px));
-    }
-  }
-  @include animation-name(animate-bounceOutLeft);
-  @include count($count);
-  @include duration($duration);
-  @include delay($delay);
-  @include function($function);
-  @include fill-mode($fill);
-  @include visibility($visibility);
+	@include keyframes(animate-bounceOutLeft) {
+		0% {
+			@include transform(translateX(0));
+		}
+		20% {
+			opacity: 1;
+			@include transform(translateX(20px));
+		}
+		100% {
+			opacity: 0;
+			@include transform(translateX(-2000px));
+		}
+	}
+	@include animation-name(animate-bounceOutLeft);
+	@include count($count);
+	@include duration($duration);
+	@include delay($delay);
+	@include function($function);
+	@include fill-mode($fill);
+	@include visibility($visibility);
 }

@@ -1,20 +1,20 @@
 @charset "UTF-8";
 
 @mixin pop {
-  @include keyframes(#{$nameSpace}-pop) {
-    50% {
-      @include prefixed(transform, scale(1.2));
-    }
-  }
+	@include keyframes(#{$nameSpace}-pop) {
+		50% {
+			@include prefixed(transform, scale(1.2));
+		}
+	}
 
-  @include hacks();
+	@include hacks();
 
-  &:hover,
-  &:focus,
-  &:active {
-    @include prefixed(animation-name, #{$nameSpace}-pop);
-    @include prefixed(animation-duration, $mediumDuration);
-    @include prefixed(animation-timing-function, linear);
-    @include prefixed(animation-iteration-count, 1);
-  }
+	&:hover,
+	&:focus,
+	&:active {
+		@include prefixed(animation-name, #{$nameSpace}-pop);
+		@include prefixed(animation-duration, $mediumDuration);
+		@include prefixed(animation-timing-function, linear);
+		@include prefixed(animation-iteration-count, 1);
+	}
 }

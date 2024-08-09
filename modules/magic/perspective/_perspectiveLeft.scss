@@ -1,40 +1,40 @@
 @charset "UTF-8";
 
 @mixin magic-perspectiveLeft($duration, $delay) {
-  -webkit-animation-name: perspectiveLeft;
-  animation-name: perspectiveLeft;
-  animation-duration: $duration;
-  animation-delay: $delay;
-  animation-fill-mode: both;
+	-webkit-animation-name: perspectiveLeft;
+	animation-name: perspectiveLeft;
+	animation-duration: $duration;
+	animation-delay: $delay;
+	animation-fill-mode: both;
 
-  @-webkit-keyframes perspectiveLeft {
-    0% {
-      -webkit-transform-origin: 0 0;
-      transform-origin: 0 0;
-      -webkit-transform: perspective(800px) rotateY(0deg);
-      transform: perspective(800px) rotateY(0deg);
-    }
+	@-webkit-keyframes perspectiveLeft {
+		0% {
+			-webkit-transform-origin: 0 0;
+			transform-origin: 0 0;
+			-webkit-transform: perspective(800px) rotateY(0deg);
+			transform: perspective(800px) rotateY(0deg);
+		}
 
-    100% {
-      -webkit-transform-origin: 0 0;
-      transform-origin: 0 0;
-      -webkit-transform: perspective(800px) rotateY(-180deg);
-      transform: perspective(800px) rotateY(-180deg);
-    }
-  }
-  @keyframes perspectiveLeft {
-    0% {
-      -webkit-transform-origin: 0 0;
-      transform-origin: 0 0;
-      -webkit-transform: perspective(800px) rotateY(0deg);
-      transform: perspective(800px) rotateY(0deg);
-    }
+		100% {
+			-webkit-transform-origin: 0 0;
+			transform-origin: 0 0;
+			-webkit-transform: perspective(800px) rotateY(-180deg);
+			transform: perspective(800px) rotateY(-180deg);
+		}
+	}
+	@keyframes perspectiveLeft {
+		0% {
+			-webkit-transform-origin: 0 0;
+			transform-origin: 0 0;
+			-webkit-transform: perspective(800px) rotateY(0deg);
+			transform: perspective(800px) rotateY(0deg);
+		}
 
-    100% {
-      -webkit-transform-origin: 0 0;
-      transform-origin: 0 0;
-      -webkit-transform: perspective(800px) rotateY(-180deg);
-      transform: perspective(800px) rotateY(-180deg);
-    }
-  }
+		100% {
+			-webkit-transform-origin: 0 0;
+			transform-origin: 0 0;
+			-webkit-transform: perspective(800px) rotateY(-180deg);
+			transform: perspective(800px) rotateY(-180deg);
+		}
+	}
 }

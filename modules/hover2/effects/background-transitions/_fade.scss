@@ -1,15 +1,15 @@
 @charset "UTF-8";
 
 @mixin fade {
-  @include hacks();
-  overflow: hidden;
-  @include prefixed(transition-duration, $mediumDuration);
-  @include prefixed(transition-property, 'color, background-color');
+	@include hacks();
+	overflow: hidden;
+	@include prefixed(transition-duration, $mediumDuration);
+	@include prefixed(transition-property, "color, background-color");
 
-  &:hover,
-  &:focus,
-  &:active {
-    background-color: $activeColor;
-    color: white;
-  }
+	&:hover,
+	&:focus,
+	&:active {
+		background-color: $activeColor;
+		color: white;
+	}
 }

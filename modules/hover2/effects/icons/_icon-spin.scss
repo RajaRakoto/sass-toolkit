@@ -1,19 +1,19 @@
 @charset "UTF-8";
 
 @mixin icon-spin {
-  @include hacks();
+	@include hacks();
 
-  .hvr-icon {
-    @include prefixed(transition-duration, 1s);
-    @include prefixed(transition-property, transform);
-    @include prefixed(transition-timing-function, ease-in-out);
-  }
+	.hvr-icon {
+		@include prefixed(transition-duration, 1s);
+		@include prefixed(transition-property, transform);
+		@include prefixed(transition-timing-function, ease-in-out);
+	}
 
-  &:hover,
-  &:focus,
-  &:active {
-    .hvr-icon {
-      @include prefixed(transform, rotate(360deg));
-    }
-  }
+	&:hover,
+	&:focus,
+	&:active {
+		.hvr-icon {
+			@include prefixed(transform, rotate(360deg));
+		}
+	}
 }

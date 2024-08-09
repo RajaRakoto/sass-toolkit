@@ -1,28 +1,28 @@
 @charset "UTF-8";
 
 @mixin animate-flipOutY(
-  $count: $countDefault,
-  $duration: $durationDefault,
-  $delay: $delayDefault,
-  $function: $functionDefault,
-  $fill: $fillDefault,
-  $visibility: $visibilityDefault
+	$count: $countDefault,
+	$duration: $durationDefault,
+	$delay: $delayDefault,
+	$function: $functionDefault,
+	$fill: $fillDefault,
+	$visibility: $visibilityDefault
 ) {
-  @include keyframes(animate-flipOutY) {
-    0% {
-      opacity: 1;
-      @include transform(perspective(400px) rotateY(0deg));
-    }
-    100% {
-      opacity: 0;
-      @include transform(perspective(400px) rotateY(90deg));
-    }
-  }
-  @include animation-name(animate-flipOutY);
-  @include count($count);
-  @include duration($duration);
-  @include delay($delay);
-  @include function($function);
-  @include fill-mode($fill);
-  @include visibility($visibility);
+	@include keyframes(animate-flipOutY) {
+		0% {
+			opacity: 1;
+			@include transform(perspective(400px) rotateY(0deg));
+		}
+		100% {
+			opacity: 0;
+			@include transform(perspective(400px) rotateY(90deg));
+		}
+	}
+	@include animation-name(animate-flipOutY);
+	@include count($count);
+	@include duration($duration);
+	@include delay($delay);
+	@include function($function);
+	@include fill-mode($fill);
+	@include visibility($visibility);
 }

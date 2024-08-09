@@ -1,21 +1,21 @@
 @charset "UTF-8";
 
 @mixin icon-back {
-  @include hacks();
-  @include prefixed(transition-duration, $fastDuration);
+	@include hacks();
+	@include prefixed(transition-duration, $fastDuration);
 
-  .hvr-icon {
-    @include prefixed(transform, translateZ(0));
-    @include prefixed(transition-duration, $fastDuration);
-    @include prefixed(transition-property, transform);
-    @include prefixed(transition-timing-function, ease-out);
-  }
+	.hvr-icon {
+		@include prefixed(transform, translateZ(0));
+		@include prefixed(transition-duration, $fastDuration);
+		@include prefixed(transition-property, transform);
+		@include prefixed(transition-timing-function, ease-out);
+	}
 
-  &:hover,
-  &:focus,
-  &:active {
-    .hvr-icon {
-      @include prefixed(transform, translateX(-4px));
-    }
-  }
+	&:hover,
+	&:focus,
+	&:active {
+		.hvr-icon {
+			@include prefixed(transform, translateX(-4px));
+		}
+	}
 }

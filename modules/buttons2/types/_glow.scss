@@ -6,13 +6,13 @@
 */
 
 @mixin glow($animation-name) {
-  animation-duration: 3s;
-  animation-iteration-count: infinite;
-  animation-name: $animation-name;
+	animation-duration: 3s;
+	animation-iteration-count: infinite;
+	animation-name: $animation-name;
 }
 
 @mixin buttons2-glow() {
-  /*
+	/*
 * Glowing Buttons
 *
 * A pulse like glow that appears
@@ -20,77 +20,77 @@
 * a button.
 */
 
-  $ubtn-default-glow-color: #2c9adb !default;
+	$ubtn-default-glow-color: #2c9adb !default;
 
-  /*
+	/*
 * Glowing Keyframes
 *
 */
 
-  @if ($ubtn-use-compass) {
-    @include keyframes(glowing) {
-      from {
-        @include box-shadow(0 0 0 rgba($ubtn-default-glow-color, 0.3));
-      }
-      50% {
-        @include box-shadow(0 0 20px rgba($ubtn-default-glow-color, 0.8));
-      }
-      to {
-        @include box-shadow(0 0 0 rgba($ubtn-default-glow-color, 0.3));
-      }
-    }
-  } @else {
-    @keyframes glowing {
-      from {
-        box-shadow: 0 0 0 rgba($ubtn-default-glow-color, 0.3);
-      }
-      50% {
-        box-shadow: 0 0 20px rgba($ubtn-default-glow-color, 0.8);
-      }
-      to {
-        box-shadow: 0 0 0 rgba($ubtn-default-glow-color, 0.3);
-      }
-    }
-  }
+	@if ($ubtn-use-compass) {
+		@include keyframes(glowing) {
+			from {
+				@include box-shadow(0 0 0 rgba($ubtn-default-glow-color, 0.3));
+			}
+			50% {
+				@include box-shadow(0 0 20px rgba($ubtn-default-glow-color, 0.8));
+			}
+			to {
+				@include box-shadow(0 0 0 rgba($ubtn-default-glow-color, 0.3));
+			}
+		}
+	} @else {
+		@keyframes glowing {
+			from {
+				box-shadow: 0 0 0 rgba($ubtn-default-glow-color, 0.3);
+			}
+			50% {
+				box-shadow: 0 0 20px rgba($ubtn-default-glow-color, 0.8);
+			}
+			to {
+				box-shadow: 0 0 0 rgba($ubtn-default-glow-color, 0.3);
+			}
+		}
+	}
 
-  /*
+	/*
 * Glowing Keyframes for various colors
 *
 */
 
-  @each $ubtn-color in $ubtn-colors {
-    $ubtn-name: nth($ubtn-color, 1);
-    $ubtn-background: nth($ubtn-color, 2);
-    $ubtn-color: nth($ubtn-color, 3);
+	@each $ubtn-color in $ubtn-colors {
+		$ubtn-name: nth($ubtn-color, 1);
+		$ubtn-background: nth($ubtn-color, 2);
+		$ubtn-color: nth($ubtn-color, 3);
 
-    @if ($ubtn-use-compass) {
-      @include keyframes(glowing-#{$ubtn-name}) {
-        from {
-          @include box-shadow(0 0 0 rgba($ubtn-background, 0.3));
-        }
-        50% {
-          @include box-shadow(0 0 20px rgba($ubtn-background, 0.8));
-        }
-        to {
-          @include box-shadow(0 0 0 rgba($ubtn-background, 0.3));
-        }
-      }
-    } @else {
-      @keyframes glowing-#{$ubtn-name} {
-        from {
-          box-shadow: 0 0 0 rgba($ubtn-background, 0.3);
-        }
-        50% {
-          box-shadow: 0 0 20px rgba($ubtn-background, 0.8);
-        }
-        to {
-          box-shadow: 0 0 0 rgba($ubtn-background, 0.3);
-        }
-      }
-    }
-  }
+		@if ($ubtn-use-compass) {
+			@include keyframes(glowing-#{$ubtn-name}) {
+				from {
+					@include box-shadow(0 0 0 rgba($ubtn-background, 0.3));
+				}
+				50% {
+					@include box-shadow(0 0 20px rgba($ubtn-background, 0.8));
+				}
+				to {
+					@include box-shadow(0 0 0 rgba($ubtn-background, 0.3));
+				}
+			}
+		} @else {
+			@keyframes glowing-#{$ubtn-name} {
+				from {
+					box-shadow: 0 0 0 rgba($ubtn-background, 0.3);
+				}
+				50% {
+					box-shadow: 0 0 20px rgba($ubtn-background, 0.8);
+				}
+				to {
+					box-shadow: 0 0 0 rgba($ubtn-background, 0.3);
+				}
+			}
+		}
+	}
 
-  /*
+	/*
 * Glowing Buttons Base Styes
 *
 * A pulse like glow that appears
@@ -98,44 +98,44 @@
 * a button.
 */
 
-  #{$ubtn-namespace}-glow {
-    @if ($ubtn-use-compass) {
-      @include glow(glowing);
+	#{$ubtn-namespace}-glow {
+		@if ($ubtn-use-compass) {
+			@include glow(glowing);
 
-      &:active,
-      &.active,
-      &.is-active {
-        @include no_animation;
-      }
-    } @else {
-      animation-duration: 3s;
-      animation-iteration-count: infinite;
-      animation-name: glowing;
+			&:active,
+			&.active,
+			&.is-active {
+				@include no_animation;
+			}
+		} @else {
+			animation-duration: 3s;
+			animation-iteration-count: infinite;
+			animation-name: glowing;
 
-      &:active,
-      &.active,
-      &.is-active {
-        animation-name: none;
-      }
-    }
-  }
+			&:active,
+			&.active,
+			&.is-active {
+				animation-name: none;
+			}
+		}
+	}
 
-  /*
+	/*
 * Glowing Button Colors
 *
 * Create colors for glowing buttons
 */
 
-  #{$ubtn-namespace}-glow {
-    @each $ubtn-color in $ubtn-colors {
-      $ubtn-name: nth($ubtn-color, 1);
-      $ubtn-background: nth($ubtn-color, 2);
-      $ubtn-color: nth($ubtn-color, 3);
-      $ubtn-color-namespace: $ubtn-namespace + '-' + $ubtn-name;
+	#{$ubtn-namespace}-glow {
+		@each $ubtn-color in $ubtn-colors {
+			$ubtn-name: nth($ubtn-color, 1);
+			$ubtn-background: nth($ubtn-color, 2);
+			$ubtn-color: nth($ubtn-color, 3);
+			$ubtn-color-namespace: $ubtn-namespace + "-" + $ubtn-name;
 
-      &#{$ubtn-color-namespace} {
-        animation-name: glowing-#{$ubtn-name};
-      }
-    }
-  }
+			&#{$ubtn-color-namespace} {
+				animation-name: glowing-#{$ubtn-name};
+			}
+		}
+	}
 }
