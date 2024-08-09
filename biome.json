@@ -149,7 +149,7 @@
 			"jspm_packages",
 			"backups",
 			"tmp",
-      "sassdoc"
+			"sassdoc"
 		]
 	}
 }

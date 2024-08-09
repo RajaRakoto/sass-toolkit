@@ -40,4 +40,4 @@ export const npm_scripts = `
 - 📜 \`npm-proxy:publish\` - Publish your npm package via the local proxy.
 - 📜 \`npm-proxy:unpublish\` - Forcefully unpublish the plum package from the npm registry via the local proxy.
 - 📜 \`npm-proxy:republish\` - Republish your npm package by first unpublishing it and then publishing it again via the local proxy.
-`
+`;
