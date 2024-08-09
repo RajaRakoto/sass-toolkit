@@ -5,18 +5,12 @@
 	"author": "Raja Rakotonirina <raja.rakoto7@gmail.com>",
 	"license": "MIT",
 	"type": "module",
-	"module": "index.ts",
-	"main": "./dist/index.js",
-	"types": "./dist/index.d.ts",
 	"repository": {
 		"type": "git",
 		"url": "git+https://github.com/RajaRakoto/plum.git"
 	},
 	"homepage": "https://github.com/RajaRakoto/plum#readme",
 	"bugs": "https://github.com/RajaRakoto/plum/issues",
-	"files": [
-		"dist"
-	],
 	"keywords": [
 		"plum",
 		"css",
