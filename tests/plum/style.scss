@@ -1,10 +1,18 @@
 @charset "UTF-8";
 
 @import "@raja-rakoto/plum/plum";
-@import '@raja-rakoto/plum/modules/bootstrap';
-@import '@raja-rakoto/plum/modules/bootstrap-grid';
-@import '@raja-rakoto/plum/modules/bootstrap-reboot';
-@import '@raja-rakoto/plum/modules/bootstrap-utilities';
+
+@import "@raja-rakoto/plum/modules/bootstrap";
+@import "@raja-rakoto/plum/modules/bootstrap-grid";
+@import "@raja-rakoto/plum/modules/bootstrap-utilities";
+@import "@raja-rakoto/plum/modules/bootstrap-reboot";
+
+@import "@raja-rakoto/plum/modules/animate";
+@import "@raja-rakoto/plum/modules/buttons2";
+@import "@raja-rakoto/plum/modules/fontawesome-free";
+@import "@raja-rakoto/plum/modules/hover2";
+@import "@raja-rakoto/plum/modules/magic";
+@import "@raja-rakoto/plum/modules/open-color";
 
 @include normalize();
 
@@ -23,3 +31,4 @@
 .test2 {
   flex-direction: column;
 }
+
