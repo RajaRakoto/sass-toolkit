@@ -239,7 +239,7 @@ $_luminance-list: 0.0008 0.001 0.0011 0.0013 0.0015 0.0017 0.002 0.0022 0.0025
 	);
 }
 
-// Return WCAG2.1 relative luminance
+// Return WCAG2.2 relative luminance
 // See https://www.w3.org/TR/WCAG/#dfn-relative-luminance
 // See https://www.w3.org/TR/WCAG/#dfn-contrast-ratio
 @function luminance($color) {
