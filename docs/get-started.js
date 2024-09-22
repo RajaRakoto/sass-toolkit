@@ -15,7 +15,7 @@ Execute the following command to start CLI:
 plum-cli
 \`\`\`
 
-<img src="https://github.com/RajaRakoto/github-docs/blob/master/plum/plum-cli-demo.gif?raw=true" width="800">
+<img src="https://rajarakoto.github.io/github-docs/plum/plum-cli-demo.gif" width="800">
 
 If you use [sass](https://www.npmjs.com/package/sass) package for compiling your SCSS files, you can incorporate the following command in your package.json file to enable SCSS file monitoring:
 

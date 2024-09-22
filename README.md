@@ -1,10 +1,10 @@
 <div align="center">
-<img src="https://github.com/RajaRakoto/github-docs/blob/master/plum/plum-gray.png?raw=true" width=512>
+<img src="https://rajarakoto.github.io/github-docs/plum/plum-gray.png" width=512>
 </div>
 
 # plum 🩷
 
-[![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com) [![forthebadge](https://forthebadge.com/images/badges/for-you.svg)](https://forthebadge.com) [![forthebadge](https://forthebadge.com/images/badges/open-source.svg)](https://forthebadge.com) [![forthebadge](https://forthebadge.com/images/badges/uses-git.svg)](https://forthebadge.com) [![forthebadge](https://github.com/RajaRakoto/github-docs/blob/master/badge/build-by.svg?raw=true)](https://forthebadge.com)
+[![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com) [![forthebadge](https://forthebadge.com/images/badges/for-you.svg)](https://forthebadge.com) [![forthebadge](https://forthebadge.com/images/badges/open-source.svg)](https://forthebadge.com) [![forthebadge](https://forthebadge.com/images/badges/uses-git.svg)](https://forthebadge.com) [![forthebadge](https://rajarakoto.github.io/github-docs/badge/build-by.svg)](https://forthebadge.com)
 
 ![Git](https://img.shields.io/badge/-Git-777?style=flat&logo=git&logoColor=F05032&labelColor=ffffff) ![Gitub](https://img.shields.io/badge/-Gitub-777?style=flat&logo=github&logoColor=777&labelColor=ffffff)
 
@@ -28,7 +28,7 @@ Execute the following command to start CLI:
 plum-cli
 ```
 
-<img src="https://github.com/RajaRakoto/github-docs/blob/master/plum/plum-cli-demo.gif?raw=true" width="800">
+<img src="https://rajarakoto.github.io/github-docs/plum/plum-cli-demo.gif" width="800">
 
 If you use [sass](https://www.npmjs.com/package/sass) package for compiling your SCSS files, you can incorporate the following command in your package.json file to enable SCSS file monitoring:
 
@@ -193,7 +193,7 @@ img {
 
 **Plum** simplifies its utilization through a dedicated [VSCode extension](https://github.com/RajaRakoto/plum-extension), encompassing a variety of code snippets. These snippets facilitate swift code generation for invoking mixins, functions, modules, frameworks, and more ...
 
-<img src="https://github.com/RajaRakoto/github-docs/blob/master/plum/plum-extension-demo.gif?raw=true" width="800">
+<img src="https://rajarakoto.github.io/github-docs/plum/plum-extension-demo.gif" width="800">
 
 **Usage**: You can install it by typing "plum" in the extension tab of your IDE
 
